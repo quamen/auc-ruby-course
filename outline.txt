@@ -23,11 +23,20 @@ Introduction
 
 - about Gareth
   - background
-    -
+    - From Melbourne
+    - Lived in Melboure, Papua New Guinea and Vienna
+    - Studied Software Engineering at RMIT
+    - Run Melbourne CocoaHeads
   - work experience
-    -
+    - 3 years professional software engineering experience
+    - Mainly Ruby on Rails, some .NET and Cocoa.
+    - AUC training courses + Dev World
   - experience with ruby, rails and the mac
-    -
+    - Mac since 2003
+    - Ruby and Rails since 2005
+    - 2 * WWDC, 1 * DevWorld (speaker), 1 * WebDirections
+    - Hannan IT, Six Figures, Box + Dice, CLEAR
+    - I wouldn't have it any other way.
   
 - Lets look a few things you can do with Ruby (DEMO)
   - Archaeopteryx using Ruby to control a midi device (garage band or reason?)
