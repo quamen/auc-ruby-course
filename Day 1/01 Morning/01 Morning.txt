@@ -1,6 +1,6 @@
 Introduction
 
-- about Marcus
+01. About Marcus
   - background
     - from melbourne
     - studied computer systems engineering at latrobe university
@@ -17,7 +17,7 @@ Introduction
       - clients such as CLEAR, SCT, Flashden/Envato, CSG Solar, Freshmeat
       - best fun i've had in my career :)
 
-- about Gareth
+02. About Gareth
   - background
     - From Melbourne
     - Lived in Melboure, Papua New Guinea and Vienna
@@ -34,8 +34,7 @@ Introduction
     - Hannan IT, Six Figures, Box + Dice, CLEAR
     - I wouldn't have it any other way.
 
-
-- Lets look a few things you can do with Ruby (DEMO)
+03. Lets look a few things you can do with Ruby (DEMO)
   - Archaeopteryx using Ruby to control a midi device (garage band or reason?)
   - CLEAR, Ruby as a trading platform for Australia's Grain Industry
   - Twitter, instant world wide communication
@@ -45,10 +44,23 @@ Introduction
   - Something a bit closer to home: http://yellowlab.com.au/, Yellow Pages, Rails application developed by Sensis
     - Piloting new features for the official yellowpages site.
     
-    
-- Mac OS X used as the development platform for all of these applications
+04. Mac OS X used as the development platform for all of these applications
   - Some really amazing things have and continue to be built
   - Allows for great integration with Mac OS X, eg:
     - Domain and Keychain Authentication via Mac OS X/server
     - Hardware accelerated multimedia processing via Core Image/Animation/Video/Audio
     - Addressbook, Calendar and MobileMe application integration
+
+05. The Ruby Value
+  - There's a whole world-wide industry out there developing Ruby based applications
+  - Exciting companies, early adopters, start ups, corporations, are all getting in on it
+  - Competitive edge using a simple, dynamic and modern language
+    - Increased development speed
+      - Faster time to market
+      - Small development teams
+      - Lower development costs
+  - Rails has been such a big catalyst for the language
+    - We'll be doing some Rails work a bit later on as well :)
+  - Large community support with many conferences, books, user groups, and more
+    - Major US and European OReilly conferences and with many smaller regional ones as well
+
