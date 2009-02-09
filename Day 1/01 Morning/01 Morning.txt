@@ -1,6 +1,8 @@
 Introduction
 
-01. About Marcus
+01. Opening Slide
+
+02. About Marcus
   - background
     - from melbourne
     - studied computer systems engineering at latrobe university
@@ -17,7 +19,7 @@ Introduction
       - clients such as CLEAR, SCT, Flashden/Envato, CSG Solar, Freshmeat
       - best fun i've had in my career :)
 
-02. About Gareth
+03. About Gareth
   - background
     - From Melbourne
     - Lived in Melboure, Papua New Guinea and Vienna
@@ -34,7 +36,7 @@ Introduction
     - Hannan IT, Six Figures, Box + Dice, CLEAR
     - I wouldn't have it any other way.
 
-03. Lets look a few things you can do with Ruby (DEMO)
+04. Lets look a few things you can do with Ruby (DEMO)
   - Archaeopteryx using Ruby to control a midi device (garage band or reason?)
   - CLEAR, Ruby as a trading platform for Australia's Grain Industry
   - Twitter, instant world wide communication
@@ -44,14 +46,14 @@ Introduction
   - Something a bit closer to home: http://yellowlab.com.au/, Yellow Pages, Rails application developed by Sensis
     - Piloting new features for the official yellowpages site.
     
-04. Mac OS X used as the development platform for all of these applications
+05. Mac OS X used as the development platform for all of these applications
   - Some really amazing things have and continue to be built
   - Allows for great integration with Mac OS X, eg:
     - Domain and Keychain Authentication via Mac OS X/server
     - Hardware accelerated multimedia processing via Core Image/Animation/Video/Audio
     - Addressbook, Calendar and MobileMe application integration
 
-05. The Ruby Value
+06. The Ruby Value
   - There's a whole world-wide industry out there developing Ruby based applications
   - Exciting companies, early adopters, start ups, corporations, are all getting in on it
   - Competitive edge using a simple, dynamic and modern language
@@ -64,3 +66,57 @@ Introduction
   - Large community support with many conferences, books, user groups, and more
     - Major US and European OReilly conferences and with many smaller regional ones as well
 
+07. General Course Agenda
+  - Ruby, the language and platform (most of today)
+    - Assume no knowledge of the language and start from the beginning
+    - Will assume you're familiar with software development and have experience with at least one language
+    - Ruby is an easy language to get started with, but has plenty of depth to master
+      - Today we'll learn the language, standard libraries, and get started writing programs in Ruby
+      - Tomorrow we'll cover advanced/awesome topics such as meta programming and domain specific languages
+  - RubyCocoa
+    - Ruby's excellent integration with Mac OS X/Cocoa
+    - This afternoon
+  - Ruby on Rails
+    - Web framework and a major catalyst for Ruby's popularity
+    - Integration with databases
+    - Tomorrow afternoon
+  - ... and we'll be building some things along the way
+    - Command line Twitter client
+    - Mac OS X Desktop Twitter client using RubyCocoa
+      - (http party, Twitter gem and a table, perhaps some animation somewhere?)
+    - Image processing RubyCocoa application, and will convert it into a
+      - Rails application, file uploads reusing the RubyCocoa processing images using Core Image
+    - Some free break time to experiment, ask questions
+
+
+08. The Plans
+- Todays Plan (approx. times)
+  - Start 9am
+    - Intro, agenda, demos
+  - Morning Tea 10.30
+    - Ruby environment
+    - Ruby the language and platform
+  - Lunch 12.00
+  - Reconvene 1pm
+    - Hello World
+    - Twitter 1.0 - command line twitter client
+  - Afternoon Tea 3pm
+    - Ruby the language
+    - RubyCocoa
+    - Twitter 2.0 - RubyCocoa twitter client
+  - Finish 5pm
+
+- Tomorrows Plan
+  - Start 9am
+    - Quick review thus far, Q&A
+    - Advanced Ruby - the cool cat's code
+  - Morning Tea 10.30
+    - Ruby on Rails, the web framework
+    - Hello World Rails App
+  - Lunch 12.00
+    - Ruby integration with Databases under Mac OS X
+    - Core Image processing via RubyCocoa
+  - Reconvene 1pm
+    - Rails app with Core Image
+    - Summary, questions & answer, feedback, etc.
+  - Finish 5pm
