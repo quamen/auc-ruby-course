@@ -1,0 +1,2 @@
+- Rails app with Core Image
+- Summary, questions & answer, feedback, etc.
