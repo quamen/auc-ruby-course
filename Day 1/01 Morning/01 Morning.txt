@@ -1,4 +1,5 @@
 Introduction
+
 - about Marcus
   - background
     - from melbourne
@@ -15,3 +16,39 @@ Introduction
       - railsconf US * 2, railsconf EU * 1, WWDC * 1
       - clients such as CLEAR, SCT, Flashden/Envato, CSG Solar, Freshmeat
       - best fun i've had in my career :)
+
+- about Gareth
+  - background
+    - From Melbourne
+    - Lived in Melboure, Papua New Guinea and Vienna
+    - Studied Software Engineering at RMIT
+    - Run Melbourne CocoaHeads
+  - work experience
+    - 3 years professional software engineering experience
+    - Mainly Ruby on Rails, some .NET and Cocoa.
+    - AUC training courses + Dev World
+  - experience with ruby, rails and the mac
+    - Mac since 2003
+    - Ruby and Rails since 2005
+    - 2 * WWDC, 1 * DevWorld (speaker), 1 * WebDirections
+    - Hannan IT, Six Figures, Box + Dice, CLEAR
+    - I wouldn't have it any other way.
+
+
+- Lets look a few things you can do with Ruby (DEMO)
+  - Archaeopteryx using Ruby to control a midi device (garage band or reason?)
+  - CLEAR, Ruby as a trading platform for Australia's Grain Industry
+  - Twitter, instant world wide communication
+    - New York plane crash, the best photos from the incident were found on Twitter - news pic
+    - Incredible, billion dollar news companies cant beat the speed of news Twitter can provide
+    - We'll be building something to work with Twitter a bit later on :)
+  - Something a bit closer to home: http://yellowlab.com.au/, Yellow Pages, Rails application developed by Sensis
+    - Piloting new features for the official yellowpages site.
+    
+    
+- Mac OS X used as the development platform for all of these applications
+  - Some really amazing things have and continue to be built
+  - Allows for great integration with Mac OS X, eg:
+    - Domain and Keychain Authentication via Mac OS X/server
+    - Hardware accelerated multimedia processing via Core Image/Animation/Video/Audio
+    - Addressbook, Calendar and MobileMe application integration
