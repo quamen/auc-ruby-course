@@ -1,1 +1,17 @@
-- Intro, agenda, demos
+Introduction
+- about Marcus
+  - background
+    - from melbourne
+    - studied computer systems engineering at latrobe university
+  - work experience
+    - 11 years professional software engineering experience
+      - c/c++, java, ruby
+    - worked overseas in Germany for 8 years
+      - Dresdner Bank, Volkswagen, Audi, Saturn and more
+  - experience with ruby, rails and the mac
+    - ruby experience since 2003
+    - rails experience 3+ years
+      - red artisan - ruby/rails focused consultancy
+      - railsconf US * 2, railsconf EU * 1, WWDC * 1
+      - clients such as CLEAR, SCT, Flashden/Envato, CSG Solar, Freshmeat
+      - best fun i've had in my career :)
