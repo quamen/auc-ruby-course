@@ -129,18 +129,18 @@ Introduction
   - From ruby-lang.org: "Ruby is... a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."
   - Interpreted, dynamic language
     - No separate compilation/build phase
-  - Free, free as in speech, not beer
-    - Can be used commercially, can be modified, distributed to your hearts content
-  - Blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming
-    - Students will notice features from other languages along the way, particularly Smalltalk and Perl
-  - Object Oriented - absolutely everything is an object
-    - Even fundamental types (1.times, "hello".upcase!)
-  - Message based (.send(:sym) is the same as a method invocation)
   - Dynamically typed
     - no declaration of types when you reference objects
       - no compile time type checking - its all done at runtime
         - lets you do some very interesting things :)
         - but your code needs to be well exercised - BDD/TDD is really important 
+  - Blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming
+    - Students will notice features from other languages along the way, particularly Smalltalk and Perl
+  - Object Oriented - absolutely everything is an object
+    - Even fundamental types (1.times, "hello".upcase!)
+  - Message based (.send(:sym) is the same as a method invocation)
+  - Free, free as in speech, not beer
+    - Can be used commercially, can be modified, distributed to your hearts content
   - Dynamic runtime
     - Can define classes and methods at runtime, and on the fly
       - Can even catch calls for methods that don't exist and define them as needed
