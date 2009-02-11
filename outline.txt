@@ -182,6 +182,84 @@ Introduction
     - Hello World
     - Comparisons to other languages
       - Iteration in Java, Smalltalk, Ruby
+      
+      Ruby
+
+      File.open "a.txt", 'w' do |f|
+        f << contents
+      end
+      
+      Java
+      
+        public class MyTestClass extends MyBaseClass implements Interface1, Interface2 {
+        
+          public void MyTestClass() {
+            this.content = "some content";
+          }
+          
+          public String toString() {
+            return "my test class" + this.content;
+          }
+          
+          private String content;
+        
+        }
+        
+        class MyTestClass < MyBaseClass
+          include Interface1, Interface2
+          
+          attr_accessor :content
+          
+          def initialize
+            @content = "some content"
+          end
+          
+          def to_s
+            "my test class #{@content}"
+          end
+          
+        end
+
+        # Iterator i = collection.iterator();
+        # for (; i.hasNext(); ) {
+        #   Object o = i.next();
+        #   System.out.println("cool object: " + o);
+        # }
+        # 
+        # for (Object o in collection) {
+        #   System.out.println("cool object:");
+        # }
+      
+      
+      Objective-C
+      
+      @interface MyTestClass : MyBaseClass <Interface1, Interface2> {
+        NSString * content;
+      }
+      
+      @property (nonatomic, retain) NSString * content;
+      
+      +(id) init;
+      -(NSString *) description;
+        
+      @end
+      
+      @implementation MyTestClass
+      
+      @synthensize content;
+      
+      +(id) init {
+        ...
+      }
+      
+      -(NSString *) description {
+        return ....
+      }
+      
+      @end
+      
+      
+      
       - Class and method definitions in objective-C, ruby
       - Reflection in Java and Ruby
       - Some cool things, auto-closing IO streams via blocks, .send, symbols
