@@ -157,7 +157,7 @@ Introduction
   - MRI 'Matz' Ruby
     - Current stable release is 1.8.7, Ruby 1.9 is the current development release
     - Written in C, standard library written in C and Ruby
-  - JRuby, Rubinius, Ruby.NET/CLR are all alternate implementations based off of 1.8.x
+  - JRuby, Rubinius, IronRuby are all alternate implementations based off of 1.8.x
     - JRuby, Java implementation of Ruby, Ruby.NET/CLR are .NET implementations
     - Rubinius is a Smalltalk blue book inspired implementation, VM in C++, rest in Ruby
     - Various levels of support
