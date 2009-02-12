@@ -1,0 +1,23 @@
+Exploring the Address Book with Ruby.
+
+Start with the SecondRubyCocoaApp.rb file in the 01 First Ruby Cocoa App directory.
+
+Using the Xcode documentation browser look up the ABAddressBook class.
+
+Use the ABAddressBook class documentation to figure out which framework is required to work with ABAddressBook and include it in your application with the OSX.require_framework command.
+
+In Objective-C if you want to access your personal record within the shared address book object you would use the following code:
+
+  ABPerson *aPerson = [[ABAddressBook sharedAddressBook] me];
+
+If you've never seen the Objective-C message passing syntax before this might be a little bit confusing.
+
+What we are doing is asking ABAddressBook for the sharedAddressBook object and then asking it for me.
+
+Try and figure out how to write this same line of code in Ruby and display your own address book entry on the screen.
+
+It's easier than you might think.
+
+Once you've done that, figure out how to display the different groups within your Address Book along with individual attributes of the first person in the first group.
+
+If you get stuck the AddressBook.rb file in this directory contains a solution.
