@@ -1,0 +1,10 @@
+The address_book directory contains a Ruby on Rails application with a scaffolded view for a person.
+
+The model file has been gutted and the application is currently broken. To run the application do the following in terminal.
+
+$ rake db:migrate
+$ script/server
+
+Open safari and head to http://localhost:3000/people
+
+You will be greeted with an exception. Implement the parts of the model required to make this page work and display the address book entries on your mac using Ruby Cocoa and the AddressBook framework.
