@@ -1,0 +1,2423 @@
+# Logfile created on Sat Feb 14 10:05:43 +1100 2009
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:05:49) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 4701ms (View: 561, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:06:02) [GET]
+  Parameters: {"id"=>"#<Person:0x2203594>"}
+Rendering template within layouts/people
+Rendering people/show
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'organization' of receiver #<NSCFArray [#<Person:0x194ce50 @person_record=#<OSX::ABPerson:0x1101c78 class='ABPerson' id=0x33d3360>>, #<Person:0x18fb1f4 @person_record=#<OSX::ABPerson:0x10fc8f4 class='ABPerson' id=0x339c360>>, #<Person:0x18d74e8 @person_record=#<OSX::ABPerson:0x1338d84 class='ABPerson' id=0x34646a0>>, #<Person:0x18b5294 @person_record=#<OSX::ABPerson:0x132df4c class='ABPerson' id=0x34516e0>>, #<Person:0x188a0e4 @person_record=#<OSX::ABPerson:0x131bd4c class='ABPerson' id=0x33d6130>>, #<Person:0x248e5e8 @person_record=#<OSX::ABPerson:0x130e8d6 class='ABPerson' id=0x3464c90>>, #<Person:0x2396334 @person_record=#<OSX::ABPerson:0x1301398 class='ABPerson' id=0x3464cf0>>, #<Person:0x23265ac @person_record=#<OSX::ABPerson:0x12f3928 class='ABPerson' id=0x33d2340>>, #<Person:0x227c494 @person_record=#<OSX::ABPerson:0x12eb57a class='ABPerson' id=0x3406950>>, #<Person:0x2237c40 @person_record=#<OSX::ABPerson:0x12e1368 class='ABPerson' id=0x3464e50>>, #) on line #3 of app/views/people/show.html.erb:
+1: <p>
+2:   <b>Organization:</b>
+3:   <%=h @person.organization %>
+4: </p>
+5: 
+6: <p>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/views/people/show.html.erb:3
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:18:in `show'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (97.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:08:25) [GET]
+  Parameters: {"id"=>"#<Person:0x2203594>"}
+
+OSX::OCException (NSInvalidArgumentException - Invalid parameter not satisfying 'uniqueId != nil && [uniqueId length] > 37'):
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+  app/models/person.rb:15:in `find'
+  app/controllers/people_controller.rb:16:in `show'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+  actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+  actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+  actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+  actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+  actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+  thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+  thin (1.0.0) lib/thin/connection.rb:54:in `process'
+  thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+  thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+  thin (1.0.0) lib/thin/server.rb:150:in `start'
+  thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.0.0) lib/thin/runner.rb:173:in `send'
+  thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+  thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+  thin (1.0.0) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (122.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:09:00) [GET]
+  Parameters: {"id"=>"#<Person:0x2203594>"}
+
+OSX::OCException (NSInvalidArgumentException - Invalid parameter not satisfying 'uniqueId != nil && [uniqueId length] > 37'):
+  app/models/person.rb:15:in `recordForUniqueId'
+  app/models/person.rb:15:in `find'
+  app/controllers/people_controller.rb:16:in `show'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+  actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+  actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+  actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+  actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+  actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+  thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+  thin (1.0.0) lib/thin/connection.rb:54:in `process'
+  thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+  thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+  thin (1.0.0) lib/thin/server.rb:150:in `start'
+  thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.0.0) lib/thin/runner.rb:173:in `send'
+  thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+  thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+  thin (1.0.0) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:09:05) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 5039ms (View: 675, DB: 0) | 200 OK [http://localhost/people/]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:09:54) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'identityUniqueId' of receiver #<OSX::ABPerson:0x1101c78 class='ABPerson' id=0x33d3360>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:10:48) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'identity' of receiver #<OSX::ABPerson:0x1101c78 class='ABPerson' id=0x33d3360>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:11:48) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'uniqueid' of receiver #<OSX::ABPerson:0x1101c78 class='ABPerson' id=0x33d3360>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (162.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:12:13) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (undefined local variable or method `uniqueid' for #<Person:0xb8da9cc>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (169.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:12:25) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (undefined local variable or method `identity' for #<Person:0xbadfda8>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:12:39) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (undefined local variable or method `identity' for #<Person:0xb82bd00>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    app/models/person.rb:13:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:14:28) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):6:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (172.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:17:20) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'identity:unique:id' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (54.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:17:41) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'identityUniqueId' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (54.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:18:13) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (person_url failed to generate from {:action=>"show", :controller=>"people", :id=>#<Person:0xb6bf548 @person_record=#<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>>}, expected: {:action=>"show", :controller=>"people"}, diff: {:id=>#<Person:0xb6bf548 @person_record=#<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>>}) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:422:in `raise_named_route_error'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:386:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:20:34) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (person_url failed to generate from {:action=>"show", :controller=>"people", :id=>#<Person:0xb456ae0 @person_record=#<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>>}, expected: {:action=>"show", :controller=>"people"}, diff: {:id=>#<Person:0xb456ae0 @person_record=#<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>>}) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:422:in `raise_named_route_error'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:386:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (45.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:20:50) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 5055ms (View: 485, DB: 0) | 200 OK [http://localhost/people/]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:21:00) [GET]
+  Parameters: {"id"=>"#<Person:0xb45b9a0>"}
+
+OSX::OCException (NSInvalidArgumentException - Invalid parameter not satisfying 'uniqueId != nil && [uniqueId length] > 37'):
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+  app/models/person.rb:17:in `find'
+  app/controllers/people_controller.rb:16:in `show'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+  actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+  actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+  actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+  actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+  actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+  thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+  thin (1.0.0) lib/thin/connection.rb:54:in `process'
+  thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+  thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+  thin (1.0.0) lib/thin/server.rb:150:in `start'
+  thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.0.0) lib/thin/runner.rb:173:in `send'
+  thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+  thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+  thin (1.0.0) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendered rescues/_trace (66.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:21:27) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'UniqueId' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:25:00) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'valueForPropertyWithKey:' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `id'
+    app/models/person.rb:16:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (47.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:25:50) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (undefined method `valueForPropertyWithKey' for #<Person:0xb9722e0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    app/models/person.rb:12:in `id'
+    app/models/person.rb:16:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:26:33) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'valueForPropertyWithKey:' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `send'
+    app/models/person.rb:12:in `id'
+    app/models/person.rb:16:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (49.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:27:41) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'valueForPropertyWithKey:' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `send'
+    app/models/person.rb:12:in `id'
+    app/models/person.rb:16:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:28:08) [GET]
+Rendering template within layouts/people
+Rendering people/index
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'valueForPropertyWithKey:' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #17 of app/views/people/index.html.erb:
+14:     <td><%=h person.first %></td>
+15:     <td><%=h person.middle %></td>
+16:     <td><%=h person.last %></td>
+17:     <td><%= link_to 'Show', person %></td>
+18:     <td><%= link_to 'Edit', edit_person_path(person) %></td>
+19:     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+20:   </tr>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/models/person.rb:12:in `send'
+    app/models/person.rb:12:in `id'
+    app/models/person.rb:16:in `to_param'
+    generated code (actionpack (2.3.0) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    actionpack (2.3.0) lib/action_controller/routing/route.rb:131:in `generate'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:384:in `generate'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:205:in `rewrite_path'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:184:in `rewrite_url'
+    actionpack (2.3.0) lib/action_controller/url_rewriter.rb:162:in `rewrite'
+    actionpack (2.3.0) lib/action_controller/base.rb:625:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `send'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:85:in `url_for'
+    (eval):16:in `person_path'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `__send__'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:109:in `polymorphic_url'
+    actionpack (2.3.0) lib/action_controller/polymorphic_routes.rb:116:in `polymorphic_path'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:91:in `url_for'
+    actionpack (2.3.0) lib/action_view/helpers/url_helper.rb:228:in `link_to'
+    app/views/people/index.html.erb:17
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+    app/views/people/index.html.erb:11
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:7:in `index'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:29:06) [GET]
+
+ArgumentError (94454020 is not a symbol):
+  app/models/person.rb:33:in `define_method'
+  app/models/person.rb:33:in `initialize_property_methods'
+  activesupport (2.3.0) lib/active_support/core_ext/object/metaclass.rb:11:in `class_eval'
+  activesupport (2.3.0) lib/active_support/core_ext/object/metaclass.rb:11:in `class_eval'
+  app/models/person.rb:32:in `initialize_property_methods'
+  app/models/person.rb:8:in `initialize'
+  app/models/person.rb:17:in `new'
+  app/models/person.rb:17:in `find'
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:43:in `collect'
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:1141:in `each'
+  /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_attachments.rb:43:in `collect'
+  app/models/person.rb:17:in `find'
+  app/controllers/people_controller.rb:5:in `index'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+  actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+  actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+  actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+  actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+  actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+  activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+  activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+  actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+  actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+  actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+  actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+  actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+  actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+  thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+  thin (1.0.0) lib/thin/connection.rb:54:in `process'
+  thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+  eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+  thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+  thin (1.0.0) lib/thin/server.rb:150:in `start'
+  thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.0.0) lib/thin/runner.rb:173:in `send'
+  thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+  thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+  thin (1.0.0) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:29:47) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 4985ms (View: 484, DB: 0) | 200 OK [http://localhost/people/]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:29:57) [GET]
+  Parameters: {"id"=>"CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson"}
+Rendering template within layouts/people
+Rendering people/show
+
+ActionView::TemplateError (Can't get Objective-C method signature for selector 'organization' of receiver #<OSX::ABPerson:0x1101980 class='ABPerson' id=0x33b6dd0>) on line #3 of app/views/people/show.html.erb:
+1: <p>
+2:   <b>Organization:</b>
+3:   <%=h @person.organization %>
+4: </p>
+5: 
+6: <p>
+
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `ocm_send'
+    /System/Library/Frameworks/RubyCocoa.framework/Resources/ruby/osx/objc/oc_wrapper.rb:50:in `method_missing'
+    app/views/people/show.html.erb:3
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:912:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `send'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:135:in `custom'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `call'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:179:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `each'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:173:in `respond'
+    actionpack (2.3.0) lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/people_controller.rb:18:in `show'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:1261:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (56.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:30:28) [GET]
+  Parameters: {"id"=>"CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson"}
+Rendering template within layouts/people
+Rendering people/show
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/people/CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:30:33) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 4457ms (View: 506, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-02-14 10:30:41) [GET]
+  Parameters: {"id"=>"CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson"}
+Rendering template within layouts/people
+Rendering people/edit
+
+ActionView::TemplateError (undefined method `errors' for #<Person:0xb6e9dd4>) on line #4 of app/views/people/edit.html.erb:
+1: <h1>Editing person</h1>
+2: 
+3: <% form_for(@person) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :organization %><br />
+
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `error_messages_for'
+    actionpack (2.3.0) lib/action_view/renderable.rb:80:in `inject'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `each'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `inject'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `error_messages_for'
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:946:in `error_messages'
+    app/views/people/edit.html.erb:4
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:461:in `fields_for'
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/people/edit.html.erb:3
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:906:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1256:in `default_render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1262:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-14 10:31:22) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 4142ms (View: 497, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-02-14 10:31:30) [GET]
+  Parameters: {"id"=>"CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson"}
+Rendering template within layouts/people
+Rendering people/show
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/people/CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson]
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-02-14 10:31:36) [GET]
+  Parameters: {"id"=>"CE341542-65FB-42F2-941C-01F9C2CA39AC:ABPerson"}
+Rendering template within layouts/people
+Rendering people/edit
+
+ActionView::TemplateError (undefined method `errors' for #<Person:0x1b7fe20>) on line #4 of app/views/people/edit.html.erb:
+1: <h1>Editing person</h1>
+2: 
+3: <% form_for(@person) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+7:     <%= f.label :organization %><br />
+
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `error_messages_for'
+    actionpack (2.3.0) lib/action_controller/record_identifier.rb:76:in `inject'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `each'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `inject'
+    actionpack (2.3.0) lib/action_view/helpers/active_record_helper.rb:179:in `error_messages_for'
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:946:in `error_messages'
+    app/views/people/edit.html.erb:4
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:461:in `fields_for'
+    actionpack (2.3.0) lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/people/edit.html.erb:3
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `send'
+    actionpack (2.3.0) lib/action_view/renderable.rb:35:in `render'
+    actionpack (2.3.0) lib/action_view/template.rb:182:in `render_template'
+    actionpack (2.3.0) lib/action_view/base.rb:247:in `render'
+    actionpack (2.3.0) lib/action_view/base.rb:318:in `_render_with_layout'
+    actionpack (2.3.0) lib/action_view/base.rb:244:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1180:in `render_for_file'
+    actionpack (2.3.0) lib/action_controller/base.rb:906:in `render_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:51:in `render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1256:in `default_render'
+    actionpack (2.3.0) lib/action_controller/base.rb:1262:in `perform_action_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:617:in `call_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    actionpack (2.3.0) lib/action_controller/rescue.rb:154:in `perform_action_without_flash'
+    actionpack (2.3.0) lib/action_controller/flash.rb:141:in `perform_action'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `send'
+    actionpack (2.3.0) lib/action_controller/base.rb:523:in `process_without_filters'
+    actionpack (2.3.0) lib/action_controller/filters.rb:606:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:391:in `process'
+    actionpack (2.3.0) lib/action_controller/base.rb:386:in `call'
+    actionpack (2.3.0) lib/action_controller/routing/route_set.rb:433:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:65:in `dispatch'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:88:in `_call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:59:in `initialize'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:29:in `call'
+    activerecord (2.3.0) lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:9:in `cache'
+    activerecord (2.3.0) lib/active_record/query_cache.rb:28:in `call'
+    actionpack (2.3.0) lib/action_controller/params_parser.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rewindable_input.rb:25:in `call'
+    actionpack (2.3.0) lib/action_controller/session/cookie_store.rb:93:in `call'
+    actionpack (2.3.0) lib/action_controller/failsafe.rb:11:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `synchronize'
+    actionpack (2.3.0) lib/action_controller/rack_ext/lock.rb:15:in `call'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:83:in `call'
+    actionpack (2.3.0) lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:79:in `dispatch_cgi'
+    actionpack (2.3.0) lib/action_controller/dispatcher.rb:29:in `dispatch'
+    thin (1.0.0) lib/thin/connection.rb:63:in `pre_process'
+    thin (1.0.0) lib/thin/connection.rb:54:in `process'
+    thin (1.0.0) lib/thin/connection.rb:39:in `receive_data'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run_machine'
+    eventmachine (0.12.2) lib/eventmachine.rb:231:in `run'
+    thin (1.0.0) lib/thin/backends/base.rb:57:in `start'
+    thin (1.0.0) lib/thin/server.rb:150:in `start'
+    thin (1.0.0) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.0.0) lib/thin/runner.rb:173:in `send'
+    thin (1.0.0) lib/thin/runner.rb:173:in `run_command'
+    thin (1.0.0) lib/thin/runner.rb:139:in `run!'
+    thin (1.0.0) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
