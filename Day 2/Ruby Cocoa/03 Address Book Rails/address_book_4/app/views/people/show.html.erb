@@ -1,0 +1,43 @@
+<p>
+  <b>Organization:</b>
+  <%=h @person.organization %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%=h @person.last %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @person.email %>
+</p>
+
+<p>
+  <b>Middle:</b>
+  <%=h @person.middle %>
+</p>
+
+<p>
+  <b>Home page:</b>
+  <%=h @person.home_page %>
+</p>
+
+<p>
+  <b>First:</b>
+  <%=h @person.first %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%=h @person.birthday %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @person.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
