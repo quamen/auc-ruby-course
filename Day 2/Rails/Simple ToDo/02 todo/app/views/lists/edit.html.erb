@@ -1,0 +1,11 @@
+<h1>Editing list</h1>
+
+<% form_for(@list) do |f| %>
+  <%= render :partial => 'form', :object => f %>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @list %> |
+<%= link_to 'Back', lists_path %>
