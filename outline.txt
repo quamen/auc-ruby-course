@@ -283,7 +283,6 @@ public class Magazine extends Book implements Glossy, SoftCover {
     - Text
     - Arrays
     - Hashes
-    - Ranges
     - Symbols
     - True, False and nil
       - Ruby's definition of Truth
