@@ -1,0 +1,22 @@
+<%= form.error_messages %>
+
+<p>
+  <%= form.label :title %><br />
+  <%= form.text_field :title %>
+</p>
+<p>
+  <%= form.label :note %><br />
+  <%= form.text_area :note %>
+</p>
+<p>
+  <%= form.label :due_by %><br />
+  <%= form.datetime_select :due_by %>
+</p>
+<p>
+  <%= form.label :person_id %><br />
+  <%= form.select(:person_id, Person.find_all.collect {|p| [p.display_for_dropdown, p.id]} )%>
+</p>
+<p>
+  <%= form.label :completed %><br />
+  <%= form.check_box :completed %>
+</p>

@@ -1,0 +1,2898 @@
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:04:09) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000159)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.01118 (89 reqs/sec) | Rendering: 0.00520 (46%) | DB: 0.00150 (13%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000179)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000231)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:04:09) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000192)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000327)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00141 (710 reqs/sec) | DB: 0.00111 (78%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000124)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000521)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000227)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00499 (200 reqs/sec) | Rendering: 0.00431 (86%) | DB: 0.00087 (17%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000355)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00498 (200 reqs/sec) | Rendering: 0.00395 (79%) | DB: 0.00036 (7%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00204 (489 reqs/sec) | Rendering: 0.00163 (80%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000274)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000197)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00325 (307 reqs/sec) | Rendering: 0.00243 (74%) | DB: 0.00047 (14%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000300)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:04:09) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000245)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00406 (246 reqs/sec) | Rendering: 0.00201 (49%) | DB: 0.00076 (18%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:04:09) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.000277)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:04:09) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"todos"}
+  [4;35;1mTodo Load (0.000336)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"todos"}
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mTodo Load (0.000329)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:04:09) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"todos"}
+  [4;35;1mTodo Load (0.000195)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:04:09) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "controller"=>"todos", "todo"=>{}}
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:07:19) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000141)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00851 (117 reqs/sec) | Rendering: 0.00349 (41%) | DB: 0.00153 (17%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000148)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000181)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000165)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:07:19) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000192)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000300)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00144 (695 reqs/sec) | DB: 0.00099 (68%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000275)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000207)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00294 (339 reqs/sec) | Rendering: 0.00234 (79%) | DB: 0.00060 (20%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000283)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00291 (343 reqs/sec) | Rendering: 0.00210 (72%) | DB: 0.00028 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00172 (581 reqs/sec) | Rendering: 0.00140 (81%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000237)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00187 (535 reqs/sec) | Rendering: 0.00114 (61%) | DB: 0.00042 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000239)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:07:19) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000270)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000160)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00322 (310 reqs/sec) | Rendering: 0.00156 (48%) | DB: 0.00067 (20%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000209)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:07:19) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000164)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.000212)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:07:19) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"todos"}
+  [4;35;1mTodo Load (0.000275)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"todos"}
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000249)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000207)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:07:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:07:19", updated_at: "2008-09-28 04:07:19">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000197)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000106)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Load (0.000273)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:07:19) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "controller"=>"todos", "todo"=>{}}
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:08:09) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000150)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00954 (104 reqs/sec) | Rendering: 0.00393 (41%) | DB: 0.00166 (17%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000172)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000191)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:08:10) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000192)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000440)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00162 (617 reqs/sec) | DB: 0.00118 (72%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000142)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000246)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000189)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00303 (329 reqs/sec) | Rendering: 0.00245 (80%) | DB: 0.00058 (19%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000290)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00316 (316 reqs/sec) | Rendering: 0.00232 (73%) | DB: 0.00029 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00191 (522 reqs/sec) | Rendering: 0.00156 (81%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000239)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000200)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00202 (495 reqs/sec) | Rendering: 0.00123 (60%) | DB: 0.00044 (21%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000232)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:08:10) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000194)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00333 (300 reqs/sec) | Rendering: 0.00167 (50%) | DB: 0.00060 (18%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:08:10) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000202)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.000244)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:08:10) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"todos"}
+  [4;35;1mTodo Load (0.000286)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"todos"}
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000229)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000215)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:08:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:08:09", updated_at: "2008-09-28 04:08:09">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000202)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000243)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.13307 (7 reqs/sec) | Rendering: 0.12922 (97%) | DB: 0.00183 (1%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mTodo Load (0.000307)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:08:10) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "controller"=>"todos", "todo"=>{}}
+  [4;36;1mSQL (0.000617)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:08:43) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000167)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00910 (109 reqs/sec) | Rendering: 0.00364 (40%) | DB: 0.00229 (25%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000156)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000192)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:08:43) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000189)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000330)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00146 (683 reqs/sec) | DB: 0.00105 (71%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000126)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000260)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:08:43) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000188)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00308 (324 reqs/sec) | Rendering: 0.00248 (80%) | DB: 0.00057 (18%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:08:43) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000311)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00209 (70%) | DB: 0.00031 (10%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:08:43) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00179 (557 reqs/sec) | Rendering: 0.00143 (79%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000236)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:08:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000366)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00216 (463 reqs/sec) | Rendering: 0.00121 (56%) | DB: 0.00060 (27%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000217)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:08:44) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000198)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00331 (302 reqs/sec) | Rendering: 0.00165 (49%) | DB: 0.00059 (17%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:08:44) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000194)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000180)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000211)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:08:44) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:08:43", updated_at: "2008-09-28 04:08:43">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000204)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000264)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000310)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00461 (217 reqs/sec) | DB: 0.00159 (34%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000260)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000233)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:08:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:08:43", updated_at: "2008-09-28 04:08:43">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000211)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000238)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.04691 (21 reqs/sec) | Rendering: 0.04565 (97%) | DB: 0.00107 (2%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:08:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:08:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000252)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000351)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:08:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:08:43", updated_at: "2008-09-28 04:08:43">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000190)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000241)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00334 (299 reqs/sec) | Rendering: 0.00189 (56%) | DB: 0.00103 (30%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000219)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000213)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:08:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:08:43", updated_at: "2008-09-28 04:08:43">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000192)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000222)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00220 (455 reqs/sec) | DB: 0.00085 (38%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000331)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000763)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000237)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000288)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000228)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:09:36) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000156)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00964 (103 reqs/sec) | Rendering: 0.00392 (40%) | DB: 0.00163 (16%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000176)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000168)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:09:36) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000193)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000310)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00148 (675 reqs/sec) | DB: 0.00106 (71%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000246)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000209)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00361 (276 reqs/sec) | Rendering: 0.00261 (72%) | DB: 0.00060 (16%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000291)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00295 (339 reqs/sec) | Rendering: 0.00210 (71%) | DB: 0.00029 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00171 (584 reqs/sec) | Rendering: 0.00136 (79%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000239)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000185)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00189 (530 reqs/sec) | Rendering: 0.00115 (60%) | DB: 0.00042 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000213)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:09:36) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000181)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000180)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00358 (279 reqs/sec) | Rendering: 0.00181 (50%) | DB: 0.00057 (16%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:09:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000202)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000166)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000229)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:09:36) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:09:36", updated_at: "2008-09-28 04:09:36">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000190)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000274)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000318)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00492 (203 reqs/sec) | DB: 0.00159 (32%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000128)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000248)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000229)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:09:36", updated_at: "2008-09-28 04:09:36">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000205)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000239)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.04487 (22 reqs/sec) | Rendering: 0.04361 (97%) | DB: 0.00105 (2%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000253)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000215)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:09:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:09:36", updated_at: "2008-09-28 04:09:36">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000205)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000242)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00338 (296 reqs/sec) | Rendering: 0.00190 (56%) | DB: 0.00092 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000234)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000215)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:09:36) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:09:36", updated_at: "2008-09-28 04:09:36">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000193)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000226)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00212 (471 reqs/sec) | DB: 0.00087 (40%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000353)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000217)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:10:05) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00945 (105 reqs/sec) | Rendering: 0.00398 (42%) | DB: 0.00165 (17%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000161)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000168)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:10:06) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000188)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000315)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00147 (681 reqs/sec) | DB: 0.00105 (71%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000243)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000188)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00309 (323 reqs/sec) | Rendering: 0.00251 (81%) | DB: 0.00056 (18%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000295)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00319 (313 reqs/sec) | Rendering: 0.00216 (67%) | DB: 0.00029 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00175 (572 reqs/sec) | Rendering: 0.00140 (80%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000252)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000200)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00197 (507 reqs/sec) | Rendering: 0.00119 (60%) | DB: 0.00045 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000215)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:10:06) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000202)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00346 (289 reqs/sec) | Rendering: 0.00177 (51%) | DB: 0.00059 (17%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:10:06) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000167)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000216)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:10:06) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:05", updated_at: "2008-09-28 04:10:05">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000193)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000255)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000314)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00479 (208 reqs/sec) | DB: 0.00155 (32%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000328)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000232)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:05", updated_at: "2008-09-28 04:10:05">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000203)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000263)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.04548 (21 reqs/sec) | Rendering: 0.04422 (97%) | DB: 0.00115 (2%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000254)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000218)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:10:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:05", updated_at: "2008-09-28 04:10:05">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000191)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000225)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00340 (293 reqs/sec) | Rendering: 0.00197 (57%) | DB: 0.00089 (26%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000223)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000219)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:10:06) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:05", updated_at: "2008-09-28 04:10:05">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000187)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000223)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00221 (453 reqs/sec) | DB: 0.00085 (38%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:10:42) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000143)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00978 (102 reqs/sec) | Rendering: 0.00433 (44%) | DB: 0.00158 (16%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000175)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000193)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000165)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:10:42) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000213)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000320)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00149 (673 reqs/sec) | DB: 0.00107 (71%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000125)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000241)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000234)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00318 (314 reqs/sec) | Rendering: 0.00255 (80%) | DB: 0.00060 (18%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000311)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00333 (300 reqs/sec) | Rendering: 0.00232 (69%) | DB: 0.00031 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00193 (517 reqs/sec) | Rendering: 0.00157 (81%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000235)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000224)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00205 (488 reqs/sec) | Rendering: 0.00123 (59%) | DB: 0.00046 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000233)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:10:42) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000203)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000187)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00386 (259 reqs/sec) | Rendering: 0.00207 (53%) | DB: 0.00062 (16%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:10:42) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"todos", "todo"=>{}}
+  [4;35;1mSQL (0.000201)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000176)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000216)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:10:42) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:42", updated_at: "2008-09-28 04:10:42">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000194)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000249)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000311)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00457 (219 reqs/sec) | DB: 0.00156 (34%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000264)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000214)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:42", updated_at: "2008-09-28 04:10:42">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000192)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000229)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.04423 (22 reqs/sec) | Rendering: 0.04296 (97%) | DB: 0.00103 (2%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos"}
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos"}
+  [4;36;1mList Load (0.000266)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000234)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:10:42) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:42", updated_at: "2008-09-28 04:10:42">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000189)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000239)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00337 (296 reqs/sec) | Rendering: 0.00193 (57%) | DB: 0.00093 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000248)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000233)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:10:42) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:10:42", updated_at: "2008-09-28 04:10:42">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000213)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000240)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00232 (430 reqs/sec) | DB: 0.00093 (40%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:11:58) [POST]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000162)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.01010 (99 reqs/sec) | Rendering: 0.00398 (39%) | DB: 0.00184 (18%) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.000175)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.000228)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000188)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:11:58) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000231)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.000350)[0m   [0;1m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00179 (559 reqs/sec) | DB: 0.00117 (65%) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.000143)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.000292)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000209)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00372 (269 reqs/sec) | Rendering: 0.00307 (82%) | DB: 0.00064 (17%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;36;1mList Load (0.000337)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00353 (283 reqs/sec) | Rendering: 0.00254 (71%) | DB: 0.00034 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00203 (492 reqs/sec) | Rendering: 0.00159 (78%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.000276)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000224)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00221 (452 reqs/sec) | Rendering: 0.00135 (61%) | DB: 0.00050 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.000241)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:11:58) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000257)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mSQL (0.000202)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00594 (168 reqs/sec) | Rendering: 0.00206 (34%) | DB: 0.00070 (11%) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.000229)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000189)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:11:58) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000215)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.07131 (14 reqs/sec) | Rendering: 0.06557 (91%) | DB: 0.00063 (0%) | 200 OK [http://test.host/lists/953125641/todos?]
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000382)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000260)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:11:58) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000232)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000368)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;35;1mTodo Destroy (0.000358)[0m   [0m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00254 (394 reqs/sec) | DB: 0.00201 (79%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mSQL (0.000142)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000267)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000332)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000374)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000271)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.01097 (91 reqs/sec) | Rendering: 0.00941 (85%) | DB: 0.00139 (12%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;35;1mList Load (0.000274)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000235)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;35;1mTodo Load (0.000391)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00543 (184 reqs/sec) | Rendering: 0.00401 (73%) | DB: 0.00090 (16%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;36;1mList Load (0.000292)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000241)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00847 (118 reqs/sec) | Rendering: 0.00718 (84%) | DB: 0.00053 (6%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;36;1mList Load (0.000279)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000263)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:11:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000220)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000253)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00223 (57%) | DB: 0.00101 (26%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000269)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000244)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:11:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:11:58", updated_at: "2008-09-28 04:11:58">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000224)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000254)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00229 (437 reqs/sec) | DB: 0.00099 (43%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000302)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:13:51) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000186)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000455)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 04:13:51', 'a list', '2008-09-28 04:13:51')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.01119 (89 reqs/sec) | DB: 0.00269 (24%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000239)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:13:52) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000250)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000352)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00199 (501 reqs/sec) | DB: 0.00125 (62%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000162)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000314)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000257)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00594 (168 reqs/sec) | Rendering: 0.00519 (87%) | DB: 0.00073 (12%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000359)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00417 (239 reqs/sec) | Rendering: 0.00305 (73%) | DB: 0.00036 (8%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00338 (295 reqs/sec) | Rendering: 0.00295 (87%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000295)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000228)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00440 (227 reqs/sec) | Rendering: 0.00335 (76%) | DB: 0.00052 (11%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000314)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:13:52) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000255)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'MyString' AND "lists".id <> 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00453 (220 reqs/sec) | Rendering: 0.00218 (48%) | DB: 0.00080 (17%) | 200 OK [http://test.host/lists/953125641?]
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000236)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:13:52) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000312)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.05865 (17 reqs/sec) | Rendering: 0.05156 (87%) | DB: 0.00083 (1%) | 200 OK [http://test.host/lists/953125641/todos?]
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000246)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000293)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:13:52) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000237)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000316)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000470)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00300 (333 reqs/sec) | DB: 0.00201 (66%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000157)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000317)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000296)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000238)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000287)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.01230 (81 reqs/sec) | Rendering: 0.01070 (87%) | DB: 0.00130 (10%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000309)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000237)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000463)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00770 (129 reqs/sec) | Rendering: 0.00602 (78%) | DB: 0.00101 (13%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000303)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000248)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.01046 (95 reqs/sec) | Rendering: 0.00882 (84%) | DB: 0.00055 (5%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000290)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000274)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:13:52) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000242)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000305)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00434 (230 reqs/sec) | Rendering: 0.00249 (57%) | DB: 0.00111 (25%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000294)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000334)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:13:52) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:13:51", updated_at: "2008-09-28 04:13:51">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000257)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000309)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00269 (371 reqs/sec) | DB: 0.00119 (44%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000302)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:14:19) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000179)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000425)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 04:14:19', 'a list', '2008-09-28 04:14:19')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00890 (112 reqs/sec) | DB: 0.00276 (30%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000187)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000261)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000229)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:14:19) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000832)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000353)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00237 (421 reqs/sec) | DB: 0.00186 (78%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000183)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000422)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000257)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00622 (160 reqs/sec) | Rendering: 0.00535 (86%) | DB: 0.00086 (13%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000387)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00406 (246 reqs/sec) | Rendering: 0.00294 (72%) | DB: 0.00039 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00336 (297 reqs/sec) | Rendering: 0.00289 (86%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000308)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000265)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00270 (370 reqs/sec) | Rendering: 0.00163 (60%) | DB: 0.00057 (21%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000433)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:14:19) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000235)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000410)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 04:14:19' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00370 (270 reqs/sec) | DB: 0.00119 (32%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000334)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000212)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:14:19) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000273)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.05961 (16 reqs/sec) | Rendering: 0.05263 (88%) | DB: 0.00082 (1%) | 200 OK [http://test.host/lists/953125641/todos?]
+  [4;35;1mSQL (0.000240)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000235)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000296)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:14:19) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000247)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000353)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;35;1mTodo Destroy (0.000562)[0m   [0m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00296 (338 reqs/sec) | DB: 0.00219 (74%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mSQL (0.000176)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000317)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000299)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000261)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000307)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.01242 (80 reqs/sec) | Rendering: 0.01081 (87%) | DB: 0.00136 (10%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;35;1mList Load (0.000314)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000277)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;35;1mTodo Load (0.000420)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00672 (148 reqs/sec) | Rendering: 0.00509 (75%) | DB: 0.00101 (15%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;36;1mList Load (0.000298)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000243)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00944 (105 reqs/sec) | Rendering: 0.00803 (85%) | DB: 0.00054 (5%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;36;1mList Load (0.000319)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000274)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:14:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000260)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000283)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00453 (220 reqs/sec) | Rendering: 0.00256 (56%) | DB: 0.00114 (25%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;36;1mList Load (0.000298)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000285)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:14:19) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:19", updated_at: "2008-09-28 04:14:19">, "controller"=>"todos", "todo"=>{}}
+  [4;36;1mList Load (0.000259)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000318)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00283 (353 reqs/sec) | DB: 0.00116 (41%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000334)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:14:50) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000280)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000651)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 04:14:50', 'a list', '2008-09-28 04:14:50')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.01127 (88 reqs/sec) | DB: 0.00371 (32%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000249)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:14:50) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000316)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000423)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00248 (402 reqs/sec) | DB: 0.00148 (59%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000353)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000283)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00743 (134 reqs/sec) | Rendering: 0.00642 (86%) | DB: 0.00090 (12%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000449)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00473 (211 reqs/sec) | Rendering: 0.00325 (68%) | DB: 0.00045 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00635 (157 reqs/sec) | Rendering: 0.00578 (91%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000377)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000332)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00320 (312 reqs/sec) | Rendering: 0.00194 (60%) | DB: 0.00071 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000614)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:14:50) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000303)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000465)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 04:14:50' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00396 (252 reqs/sec) | DB: 0.00152 (38%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000988)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000263)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:14:50) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000302)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000548)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "created_at") VALUES(NULL, '2008-09-28 04:14:50', 'a todo entry', NULL, 953125641, NULL, '2008-09-28 04:14:50')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.01259 (79 reqs/sec) | DB: 0.00210 (16%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000203)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000300)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000244)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000316)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:14:50) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000297)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000844)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000426)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00443 (225 reqs/sec) | DB: 0.00263 (59%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000456)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000323)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000298)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000891)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.07113 (14 reqs/sec) | Rendering: 0.06863 (96%) | DB: 0.00217 (3%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000379)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000304)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000696)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00656 (152 reqs/sec) | Rendering: 0.00450 (68%) | DB: 0.00138 (21%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000348)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000274)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.01360 (73 reqs/sec) | Rendering: 0.01194 (87%) | DB: 0.00062 (4%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000331)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000322)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:14:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000304)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000399)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00757 (132 reqs/sec) | Rendering: 0.00284 (37%) | DB: 0.00136 (17%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000352)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000342)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:14:50) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:14:50", updated_at: "2008-09-28 04:14:50">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000305)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000334)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00317 (315 reqs/sec) | DB: 0.00133 (42%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000331)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 14:15:17) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000490)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 04:15:17', 'a list', '2008-09-28 04:15:17')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.01181 (84 reqs/sec) | DB: 0.00300 (25%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000196)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000245)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 14:15:17) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000300)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000386)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00207 (482 reqs/sec) | DB: 0.00141 (67%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000209)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000365)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000275)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00737 (135 reqs/sec) | Rendering: 0.00649 (88%) | DB: 0.00085 (11%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000440)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00487 (205 reqs/sec) | Rendering: 0.00359 (73%) | DB: 0.00044 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00438 (228 reqs/sec) | Rendering: 0.00379 (86%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000377)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000467)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00332 (301 reqs/sec) | Rendering: 0.00191 (57%) | DB: 0.00084 (25%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000343)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 14:15:17) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000385)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000478)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 04:15:17' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00449 (222 reqs/sec) | DB: 0.00134 (29%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000326)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000260)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 14:15:17) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000320)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000533)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "created_at") VALUES(NULL, '2008-09-28 04:15:17', 'a todo entry', NULL, 953125641, NULL, '2008-09-28 04:15:17')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.01059 (94 reqs/sec) | DB: 0.00144 (13%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000191)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000487)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000259)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000852)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 14:15:17) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000324)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000355)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000681)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00339 (294 reqs/sec) | DB: 0.00315 (92%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000372)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000318)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos"}
+  [4;36;1mList Load (0.001565)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000404)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.07115 (14 reqs/sec) | Rendering: 0.06764 (95%) | DB: 0.00288 (4%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000371)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000303)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000505)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00641 (156 reqs/sec) | Rendering: 0.00455 (71%) | DB: 0.00118 (18%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000683)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000321)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.01316 (75 reqs/sec) | Rendering: 0.01146 (87%) | DB: 0.00100 (7%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000542)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000325)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 14:15:17) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000405)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000340)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00640 (156 reqs/sec) | Rendering: 0.00402 (62%) | DB: 0.00161 (25%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000338)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000318)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 14:15:17) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 04:15:17", updated_at: "2008-09-28 04:15:17">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000287)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000356)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00368 (272 reqs/sec) | DB: 0.00130 (35%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 18:46:57) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000195)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000492)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 08:46:57', 'a list', '2008-09-28 08:46:57')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00814 (122 reqs/sec) | DB: 0.00200 (24%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000203)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 18:46:57) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000222)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000415)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00174 (575 reqs/sec) | DB: 0.00128 (73%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000151)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000322)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000260)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00784 (127 reqs/sec) | Rendering: 0.00705 (89%) | DB: 0.00073 (9%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000355)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00531 (188 reqs/sec) | Rendering: 0.00427 (80%) | DB: 0.00036 (6%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00465 (214 reqs/sec) | Rendering: 0.00410 (88%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000282)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000370)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00421 (237 reqs/sec) | Rendering: 0.00277 (65%) | DB: 0.00065 (15%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000278)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 18:46:57) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000295)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000113)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000410)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 08:46:57' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00341 (293 reqs/sec) | DB: 0.00110 (32%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000249)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000208)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 18:46:57) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000241)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000360)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 08:46:57', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 08:46:57')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00779 (128 reqs/sec) | DB: 0.00106 (13%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000124)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000263)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000237)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000279)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 18:46:57) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000231)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000295)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000313)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00254 (393 reqs/sec) | DB: 0.00174 (68%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000489)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000344)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000228)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000296)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.12313 (8 reqs/sec) | Rendering: 0.12163 (98%) | DB: 0.00153 (1%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000301)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000235)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000534)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.02544 (39 reqs/sec) | Rendering: 0.02383 (93%) | DB: 0.00107 (4%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000291)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000234)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.01150 (86 reqs/sec) | Rendering: 0.01015 (88%) | DB: 0.00053 (4%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000289)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000284)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 18:46:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000241)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000298)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00493 (202 reqs/sec) | Rendering: 0.00319 (64%) | DB: 0.00111 (22%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000278)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000285)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 18:46:57) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:46:57", updated_at: "2008-09-28 08:46:57">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000281)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000355)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00271 (368 reqs/sec) | DB: 0.00120 (44%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 18:52:22) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000156)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000321)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 08:52:22', 'a list', '2008-09-28 08:52:22')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00672 (148 reqs/sec) | DB: 0.00168 (24%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000125)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000352)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000247)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 18:52:22) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000235)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000302)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00162 (615 reqs/sec) | DB: 0.00126 (77%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000430)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000235)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00511 (195 reqs/sec) | Rendering: 0.00440 (86%) | DB: 0.00088 (17%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000340)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00318 (314 reqs/sec) | Rendering: 0.00220 (69%) | DB: 0.00034 (10%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00250 (399 reqs/sec) | Rendering: 0.00217 (86%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000236)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000162)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00151 (663 reqs/sec) | Rendering: 0.00087 (57%) | DB: 0.00040 (26%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000160)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 18:52:22) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000143)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000242)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 08:52:22' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00196 (511 reqs/sec) | DB: 0.00062 (31%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000255)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000213)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 18:52:22) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "todo"=>{"title"=>"a todo entry"}, "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;36;1mList Load (0.000226)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000315)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 08:52:22', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 08:52:22')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00641 (155 reqs/sec) | DB: 0.00101 (15%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000111)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000144)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000133)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000171)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 18:52:22) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;36;1mList Load (0.000154)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000173)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000211)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00153 (655 reqs/sec) | DB: 0.00110 (71%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000088)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000489)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000336)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;36;1mList Load (0.000227)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000293)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.03370 (29 reqs/sec) | Rendering: 0.03224 (95%) | DB: 0.00143 (4%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000197)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;35;1mList Load (0.000148)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000257)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00317 (315 reqs/sec) | Rendering: 0.00225 (70%) | DB: 0.00060 (18%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000175)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;36;1mList Load (0.000141)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00620 (161 reqs/sec) | Rendering: 0.00539 (86%) | DB: 0.00032 (5%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000175)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000170)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 18:52:22) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;35;1mList Load (0.000138)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00240 (417 reqs/sec) | Rendering: 0.00136 (56%) | DB: 0.00066 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000161)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000168)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 18:52:22) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "todo"=>{}, "controller"=>"todos", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 08:52:22", updated_at: "2008-09-28 08:52:22">}
+  [4;35;1mList Load (0.000135)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00153 (652 reqs/sec) | DB: 0.00064 (41%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000397)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000279)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000236)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000243)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000237)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000237)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000237)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000261)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000247)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000237)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000236)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000242)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000340)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000298)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000286)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000385)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:05:55', 'something', '2008-09-28 09:05:55')[0m
+  [4;35;1mSQL (0.000235)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000435)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000287)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000273)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000298)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000394)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:09:21', 'something', '2008-09-28 09:09:21')[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000334)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000279)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000269)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000268)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000363)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:09:40', 'something', '2008-09-28 09:09:40')[0m
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000208)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000163)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000157)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000327)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:09:45', 'something', '2008-09-28 09:09:45')[0m
+  [4;35;1mSQL (0.000148)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000367)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:13:04', 'something', '2008-09-28 09:13:04')[0m
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000298)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 19:13:06) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000173)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000363)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:13:06', 'a list', '2008-09-28 09:13:06')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00799 (125 reqs/sec) | DB: 0.00171 (21%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000159)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000374)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000309)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 19:13:06) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000325)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000312)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00174 (576 reqs/sec) | DB: 0.00148 (85%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000145)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000496)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000223)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00534 (187 reqs/sec) | Rendering: 0.00465 (87%) | DB: 0.00086 (16%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000350)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00360 (277 reqs/sec) | Rendering: 0.00258 (71%) | DB: 0.00035 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00273 (366 reqs/sec) | Rendering: 0.00232 (85%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000222)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000175)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00189 (529 reqs/sec) | Rendering: 0.00117 (62%) | DB: 0.00040 (21%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000306)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 19:13:06) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000172)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000348)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 09:13:06' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00271 (369 reqs/sec) | DB: 0.00093 (34%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000250)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000184)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 19:13:06) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000214)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000334)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 09:13:06', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 09:13:06')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00677 (147 reqs/sec) | DB: 0.00098 (14%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000125)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000363)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000258)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000325)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 19:13:06) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000228)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000358)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000313)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00259 (386 reqs/sec) | DB: 0.00197 (76%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000150)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000622)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000463)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000229)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000298)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.03446 (29 reqs/sec) | Rendering: 0.03291 (95%) | DB: 0.00176 (5%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000192)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000139)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000252)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00218 (70%) | DB: 0.00058 (18%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000161)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000137)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00619 (161 reqs/sec) | Rendering: 0.00535 (86%) | DB: 0.00030 (4%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000168)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000166)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 19:13:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000149)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000173)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00237 (422 reqs/sec) | Rendering: 0.00134 (56%) | DB: 0.00066 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000158)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 19:13:06) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:06", updated_at: "2008-09-28 09:13:06">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000131)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000171)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00150 (664 reqs/sec) | DB: 0.00063 (41%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000206)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000474)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:13:55', 'something', '2008-09-28 09:13:55')[0m
+  [4;35;1mSQL (0.000191)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 19:13:57) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000376)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:13:57', 'a list', '2008-09-28 09:13:57')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00803 (124 reqs/sec) | DB: 0.00171 (21%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000157)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000312)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000235)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 19:13:57) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000223)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000321)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00174 (576 reqs/sec) | DB: 0.00125 (71%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000145)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000378)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000294)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00543 (184 reqs/sec) | Rendering: 0.00467 (86%) | DB: 0.00082 (15%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000351)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00358 (279 reqs/sec) | Rendering: 0.00255 (71%) | DB: 0.00035 (9%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00271 (368 reqs/sec) | Rendering: 0.00235 (86%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000222)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000174)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00182 (549 reqs/sec) | Rendering: 0.00110 (60%) | DB: 0.00040 (21%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 19:13:57) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000141)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000067)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000275)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 09:13:57' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00219 (457 reqs/sec) | DB: 0.00066 (30%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000210)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 19:13:57) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000237)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000425)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 09:13:57', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 09:13:57')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00844 (118 reqs/sec) | DB: 0.00116 (13%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000159)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000303)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000239)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000283)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 19:13:57) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000237)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000294)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000328)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00259 (385 reqs/sec) | DB: 0.00184 (71%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000515)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000403)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000254)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000307)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.03400 (29 reqs/sec) | Rendering: 0.03226 (94%) | DB: 0.00162 (4%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000196)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000182)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000254)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00328 (304 reqs/sec) | Rendering: 0.00225 (68%) | DB: 0.00063 (19%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000169)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000134)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00647 (154 reqs/sec) | Rendering: 0.00568 (87%) | DB: 0.00030 (4%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000171)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 19:13:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000141)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00245 (408 reqs/sec) | Rendering: 0.00139 (56%) | DB: 0.00065 (26%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000165)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 19:13:57) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:13:57", updated_at: "2008-09-28 09:13:57">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000133)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000172)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00151 (663 reqs/sec) | DB: 0.00064 (42%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000228)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000374)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:14:54', 'something', '2008-09-28 09:14:54')[0m
+  [4;35;1mSQL (0.000167)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000442)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000203)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000288)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000195)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 19:14:56) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000109)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000244)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:14:56', 'a list', '2008-09-28 09:14:56')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00566 (176 reqs/sec) | DB: 0.00169 (29%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000097)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000241)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 19:14:56) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000225)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000315)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00162 (618 reqs/sec) | DB: 0.00128 (79%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000142)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000411)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000225)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 0.00518 (193 reqs/sec) | Rendering: 0.00449 (86%) | DB: 0.00078 (15%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000354)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00352 (284 reqs/sec) | Rendering: 0.00249 (70%) | DB: 0.00035 (10%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 0.00257 (389 reqs/sec) | Rendering: 0.00221 (85%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000224)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000172)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00175 (570 reqs/sec) | Rendering: 0.00105 (59%) | DB: 0.00040 (22%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000182)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 19:14:56) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000156)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000234)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 09:14:56' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00214 (468 reqs/sec) | DB: 0.00066 (31%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000125)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 19:14:56) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000136)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000282)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 09:14:56', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 09:14:56')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00523 (191 reqs/sec) | DB: 0.00072 (13%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000102)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000239)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000281)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 19:14:56) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000232)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000292)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000292)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00235 (426 reqs/sec) | DB: 0.00171 (72%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000136)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000385)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000332)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000289)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000298)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 0.03437 (29 reqs/sec) | Rendering: 0.03280 (95%) | DB: 0.00144 (4%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000195)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000139)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000250)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00307 (326 reqs/sec) | Rendering: 0.00217 (70%) | DB: 0.00058 (19%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000164)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000138)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 0.00619 (161 reqs/sec) | Rendering: 0.00540 (87%) | DB: 0.00030 (4%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000168)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 19:14:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000134)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00233 (429 reqs/sec) | Rendering: 0.00131 (56%) | DB: 0.00064 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000155)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 19:14:56) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 09:14:56", updated_at: "2008-09-28 09:14:56">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000135)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000172)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00152 (658 reqs/sec) | DB: 0.00063 (41%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]
+  [4;36;1mSQL (0.000246)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000366)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:15:56', 'something', '2008-09-28 09:15:56')[0m
+  [4;35;1mSQL (0.000194)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000428)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000201)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000313)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000158)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000217)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000140)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000168)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000367)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:16:09', 'something', '2008-09-28 09:16:09')[0m
+  [4;35;1mSQL (0.000174)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000442)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000208)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000349)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000206)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000287)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000229)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Load (0.000438)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000452)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+  [4;36;1mTodo Load (0.000400)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000233)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000135)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000328)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:17:28', 'something', '2008-09-28 09:17:28')[0m
+  [4;35;1mSQL (0.000148)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000459)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000241)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000334)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000195)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000281)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000195)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Load (0.000360)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000416)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+  [4;36;1mList Load (0.000351)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 996332877) [0m
+  [4;35;1mTodo Load (0.000126)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 996332877) [0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000153)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000375)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 09:18:00', 'something', '2008-09-28 09:18:00')[0m
+  [4;35;1mSQL (0.000162)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000517)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000234)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000335)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000199)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000285)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000199)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Load (0.000532)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000628)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+  [4;36;1mList Load (0.000323)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 996332877) [0m
+  [4;35;1mTodo Load (0.000122)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 996332877) [0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title IS NULL) [0m
+  [4;35;1mSQL (0.000153)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mList Create (0.000411)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 10:02:11', 'something', '2008-09-28 10:02:11')[0m
+  [4;35;1mSQL (0.000164)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'something') [0m
+  [4;36;1mTodo Load (0.000509)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000254)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000347)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.000207)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000299)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.000206)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2008-09-28 20:02:13) [POST]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"create", "controller"=>"lists"}
+  [4;35;1mSQL (0.000158)[0m   [0mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list') [0m
+  [4;36;1mList Create (0.000310)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2008-09-28 10:02:13', 'a list', '2008-09-28 10:02:13')[0m
+Redirected to http://test.host/lists/996332878
+Completed in 0.00771 (129 reqs/sec) | DB: 0.00163 (21%) | 302 Found [http://test.host/lists?list%5Btitle%5D=a+list]
+  [4;35;1mSQL (0.000131)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000237)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2008-09-28 20:02:13) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000222)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.000300)[0m   [0m DELETE FROM "lists"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists
+Completed in 0.00159 (628 reqs/sec) | DB: 0.00116 (72%) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.000354)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "controller"=>"lists"}
+  [4;36;1mList Load (0.000221)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Rendered lists/_form (0.00041)
+Completed in 0.00584 (171 reqs/sec) | Rendering: 0.00515 (88%) | DB: 0.00073 (12%) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"lists"}
+  [4;35;1mList Load (0.000350)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 0.00333 (300 reqs/sec) | Rendering: 0.00229 (68%) | DB: 0.00035 (10%) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"lists"}
+Rendering template within layouts/lists
+Rendering lists/new
+Rendered lists/_form (0.00029)
+Completed in 0.00241 (415 reqs/sec) | Rendering: 0.00209 (86%) | DB: 0.00000 (0%) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.000204)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000156)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 0.00176 (569 reqs/sec) | Rendering: 0.00112 (63%) | DB: 0.00036 (20%) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.000184)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2008-09-28 20:02:13) [PUT]
+  Session ID: 
+  Parameters: {"list"=>{"title"=>"a list"}, "action"=>"update", "id"=>"953125641", "controller"=>"lists"}
+  [4;35;1mList Load (0.000155)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mSELECT "title" FROM "lists" WHERE ("lists".title = 'a list' AND "lists".id <> 953125641) [0m
+  [4;35;1mList Update (0.000236)[0m   [0mUPDATE "lists" SET "title" = 'a list', "updated_at" = '2008-09-28 10:02:13' WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists/953125641
+Completed in 0.00218 (457 reqs/sec) | DB: 0.00065 (29%) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=a+list]
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mList Load (0.000208)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2008-09-28 20:02:13) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos", "todo"=>{"title"=>"a todo entry"}}
+  [4;36;1mList Load (0.000242)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Create (0.000358)[0m   [0mINSERT INTO "todos" ("completed", "updated_at", "title", "due_by", "list_id", "note", "person_id", "created_at") VALUES(NULL, '2008-09-28 10:02:13', 'a todo entry', NULL, 953125641, NULL, NULL, '2008-09-28 10:02:13')[0m
+Redirected to http://test.host/lists/953125641/todos/996332878
+Completed in 0.00782 (127 reqs/sec) | DB: 0.00108 (13%) | 302 Found [http://test.host/lists/953125641/todos?todo%5Btitle%5D=a+todo+entry]
+  [4;36;1mSQL (0.000139)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.000298)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000237)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000336)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2008-09-28 20:02:13) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000226)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000302)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+  [4;36;1mTodo Destroy (0.000365)[0m   [0;1m DELETE FROM "todos"
+ WHERE "id" = 953125641
+[0m
+Redirected to http://test.host/lists/953125641/todos
+Completed in 0.00268 (372 reqs/sec) | DB: 0.00190 (70%) | 302 Found [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mSQL (0.000152)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mList Load (0.000492)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000398)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000235)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.000321)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Rendered todos/_form (0.39180)
+Completed in 0.39878 (2 reqs/sec) | Rendering: 0.39714 (99%) | DB: 0.00160 (0%) | 200 OK [http://test.host/lists/953125641/todos/953125641/edit]
+  [4;36;1mList Load (0.000200)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#index (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000141)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/index
+  [4;36;1mTodo Load (0.000259)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+Completed in 0.00316 (316 reqs/sec) | Rendering: 0.00224 (70%) | DB: 0.00060 (19%) | 200 OK [http://test.host/lists/953125641/todos]
+  [4;35;1mList Load (0.000159)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing TodosController#new (for 0.0.0.0 at 2008-09-28 20:02:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos"}
+  [4;36;1mList Load (0.000137)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/new
+Rendered todos/_form (0.05627)
+Completed in 0.05879 (17 reqs/sec) | Rendering: 0.05798 (98%) | DB: 0.00030 (0%) | 200 OK [http://test.host/lists/953125641/todos/new]
+  [4;35;1mList Load (0.000195)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000171)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2008-09-28 20:02:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos"}
+  [4;35;1mList Load (0.000146)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 0.00251 (398 reqs/sec) | Rendering: 0.00139 (55%) | DB: 0.00069 (27%) | 200 OK [http://test.host/lists/953125641/todos/953125641]
+  [4;35;1mList Load (0.000163)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000167)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2008-09-28 20:02:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"953125641", "list_id"=>#<List id: 953125641, title: "MyString", created_at: "2008-09-28 10:02:13", updated_at: "2008-09-28 10:02:13">, "controller"=>"todos", "todo"=>{}}
+  [4;35;1mList Load (0.000134)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.000175)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641 AND ("todos".list_id = 953125641)) [0m
+Redirected to http://test.host/lists/953125641/todos/953125641
+Completed in 0.00157 (638 reqs/sec) | DB: 0.00064 (40%) | 302 Found [http://test.host/lists/953125641/todos/953125641?]

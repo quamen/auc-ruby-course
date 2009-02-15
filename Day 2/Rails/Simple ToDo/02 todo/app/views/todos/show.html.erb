@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @todo.title %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @todo.note %>
+</p>
+
+<p>
+  <b>Due by:</b>
+  <%=h @todo.due_by %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%=h @todo.completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_list_todo_path(@list, @todo) %> |
+<%= link_to 'Back', list_todos_path(@list) %>
