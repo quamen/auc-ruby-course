@@ -320,8 +320,6 @@ public class Magazine extends Book implements Glossy, SoftCover {
     - Modules (ie. multiple inheritance)
 
 - Ruby the platform
-  - Strings
-    - Variable interpolation
   - Regular Expressions
     - First class objects
   - Dates and Times
@@ -419,8 +417,6 @@ Quick Review and Q&A (duplicated form above)
         - If the receiver responds to a method, it can be called without requiring any type changes
         - Similarities to Objective-C's performSelector:(SEL)aSelector method
       - Module inclusion allows reuse across classes of a non-descendent parents
-    - Traits based inheritance
-       - eg. Enumerable
     - Modules vs Classes
     - Prototype based programming
       - Extending classes with modules during runtime
@@ -442,7 +438,6 @@ Quick Review and Q&A (duplicated form above)
 
 - Reflection and Introspection (demo and slides)
   - Inspecting Objects
-    - Object ancestors (parent class and included modules)
     - Enumerating defined methods
     - Accessing and modifying object state
       - instance_variable_get/set
