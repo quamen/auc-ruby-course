@@ -183,82 +183,94 @@ Introduction
     - Comparisons to other languages
       - Iteration in Java, Smalltalk, Ruby
       
-      Ruby
+      
+Ruby
 
-      File.open "a.txt", 'w' do |f|
-        f << contents
-      end
-      
-      Java
-      
-        public class MyTestClass extends MyBaseClass implements Interface1, Interface2 {
-        
-          public void MyTestClass() {
-            this.content = "some content";
-          }
-          
-          public String toString() {
-            return "my test class" + this.content;
-          }
-          
-          private String content;
-        
-        }
-        
-        class MyTestClass < MyBaseClass
-          include Interface1, Interface2
-          
-          attr_accessor :content
-          
-          def initialize
-            @content = "some content"
-          end
-          
-          def to_s
-            "my test class #{@content}"
-          end
-          
-        end
+require 'book'
+require 'glossy'
+require 'softcover'
 
-        # Iterator i = collection.iterator();
-        # for (; i.hasNext(); ) {
-        #   Object o = i.next();
-        #   System.out.println("cool object: " + o);
-        # }
-        # 
-        # for (Object o in collection) {
-        #   System.out.println("cool object:");
-        # }
-      
-      
-      Objective-C
-      
-      @interface MyTestClass : MyBaseClass <Interface1, Interface2> {
-        NSString * content;
-      }
-      
-      @property (nonatomic, retain) NSString * content;
-      
-      +(id) init;
-      -(NSString *) description;
-        
-      @end
-      
-      @implementation MyTestClass
-      
-      @synthensize content;
-      
-      +(id) init {
-        ...
-      }
-      
-      -(NSString *) description {
-        return ....
-      }
-      
-      @end
-      
-      
+class Magazine < Book
+  include Glossy, SoftCover
+
+  attr_accessor :title, :content
+
+  def initialize(title, content)
+    @title = title
+    @content = content
+  end
+
+  def to_s
+    "#{@title}: #{@content}"
+  end
+
+end
+
+Objective-C
+
+#import "book.h"
+#import "glossy.h"
+#import "softcover.h"
+
+@interface Magazine : Book <Glossy, SoftCover> {
+  NSString * title;
+  NSString * content;
+}
+
+@property (nonatomic, assign) NSString * title;
+@property (nonatomic, assign) NSString * content;
+
+- (id)initWithTitle:(NSString *)title andContent:(NSString *)content;
+
+@end
+
+@implementation Magazine
+@synthesize title, content;
+
+- (id)initWithTitle:(NSString *)aTitle andContent:(NSString *)someContent {
+    if (self = [super init]) {
+      title = aTitle;
+      content = someContent;
+    }
+    return self;
+}
+
++ (NSString *)description {
+  return [NSString stringWithFormat:@"%s: %s", title, content];
+}
+
+@end
+
+Java
+
+import com.company.books.Book;
+import com.company.books.printing.styles.Glossy;
+import com.company.books.covers.SoftCover;
+
+public class Magazine extends Book implements Glossy, SoftCover {
+  
+  public Magazine(String title, String content) {
+    this.title = title;
+    this.content = content;
+  }
+  
+  public void setTitle(String title) {
+    this.title = title;
+  }
+  
+  public String getTitle() {
+    return title;
+  }
+  
+  // ... same for content ...
+  
+  public String toString() {
+    return title + ": " + content;
+  }
+  
+  private String title;
+  private String content;
+}
       
       - Class and method definitions in objective-C, ruby
       - Reflection in Java and Ruby
