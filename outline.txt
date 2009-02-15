@@ -311,8 +311,6 @@ public class Magazine extends Book implements Glossy, SoftCover {
     - Implicit return value
     - Optional parameters
     - Aliasing
-  - Procs and lambdas
-    - Closures
   - Classes
     - Method visibility
     - Creation and initializations
