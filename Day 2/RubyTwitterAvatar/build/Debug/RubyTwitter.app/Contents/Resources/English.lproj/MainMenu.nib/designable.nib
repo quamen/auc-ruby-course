@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="409"/>
+			<integer value="380"/>
 			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -870,8 +870,8 @@
 														<reference key="NSTextColor" ref="362097515"/>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="725967934">
-														<int key="NSCellFlags">337772097</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags">337772033</int>
+														<int key="NSCellFlags2">0</int>
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="576819539"/>
 														<reference key="NSControlView" ref="800884082"/>
@@ -2393,8 +2393,8 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{291, 345}, {479, 493}}</string>
-					<string>{{291, 345}, {479, 493}}</string>
+					<string>{{537, 334}, {479, 493}}</string>
+					<string>{{537, 334}, {479, 493}}</string>
 					<reference ref="9"/>
 					<string>{{517, 575}, {480, 270}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
