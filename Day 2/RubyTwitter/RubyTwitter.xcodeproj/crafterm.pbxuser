@@ -1,0 +1,116 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = BF5BBD580F4AB9690098F0A6 /* RubyTwitter */;
+		activeTarget = 4DDCA7030ACC9A6100E082CE /* RubyTwitter */;
+		addToTargets = (
+			4DDCA7030ACC9A6100E082CE /* RubyTwitter */,
+		);
+		codeSenseManager = BF5BBD710F4AB9850098F0A6 /* Code sense */;
+		executables = (
+			BF5BBD580F4AB9690098F0A6 /* RubyTwitter */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					993,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 256555370;
+			PBXWorkspaceStateSaveDate = 256555370;
+		};
+		perUserProjectItems = {
+			BF5BBD960F4ABF690098F0A6 /* PBXTextBookmark */ = BF5BBD960F4ABF690098F0A6 /* PBXTextBookmark */;
+			BF5BBD970F4ABF690098F0A6 /* PBXTextBookmark */ = BF5BBD970F4ABF690098F0A6 /* PBXTextBookmark */;
+		};
+		sourceControlManager = BF5BBD700F4AB9850098F0A6 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4DDCA7030ACC9A6100E082CE /* RubyTwitter */ = {
+		activeExec = 0;
+		executables = (
+			BF5BBD580F4AB9690098F0A6 /* RubyTwitter */,
+		);
+	};
+	BF5BBD580F4AB9690098F0A6 /* RubyTwitter */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = RubyTwitter;
+		sourceDirectories = (
+		);
+	};
+	BF5BBD700F4AB9850098F0A6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	BF5BBD710F4AB9850098F0A6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BF5BBD7A0F4ABAB90098F0A6 /* TableDataSource.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 574}}";
+			sepNavSelRange = "{330, 0}";
+			sepNavVisRange = "{0, 809}";
+		};
+	};
+	BF5BBD960F4ABF690098F0A6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF5BBD7A0F4ABAB90098F0A6 /* TableDataSource.rb */;
+		name = "TableDataSource.rb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 205;
+		vrLoc = 0;
+	};
+	BF5BBD970F4ABF690098F0A6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF5BBD7A0F4ABAB90098F0A6 /* TableDataSource.rb */;
+		name = "TableDataSource.rb: 17";
+		rLen = 0;
+		rLoc = 330;
+		rType = 0;
+		vrLen = 809;
+		vrLoc = 0;
+	};
+}
