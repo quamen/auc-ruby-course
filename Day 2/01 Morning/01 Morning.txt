@@ -1,2 +1,0 @@
-- Quick review thus far, Q&A
-- Advanced Ruby - the cool cat's code

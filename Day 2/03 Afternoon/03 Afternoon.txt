@@ -1,2 +1,0 @@
-- Ruby integration with Databases under Mac OS X
-- Core Image processing via RubyCocoa
