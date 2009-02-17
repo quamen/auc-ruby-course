@@ -12,10 +12,21 @@ require 'osx/cocoa'
 
 class TableDataSource < OSX::NSObject
   attr_accessor :tweets
+  
+  ib_outlet :table_view, :spinner
+  ib_action :refresh
+  
+  def refresh(sender)
+    @spinner.startAnimation(sender)
+    @spinner.setAlphaValue(1.0) # fade out
+    @table_view.reloadData
+    @spinner.setAlphaValue(0.0) # fade in
+    @spinner.stopAnimation(sender)
+  end
 
   def numberOfRowsInTableView(tableView)
     @tweets = fetch_tweets
-    puts @tweets.inspect
+    #puts @tweets.inspect
     @tweets.size
   end
   
