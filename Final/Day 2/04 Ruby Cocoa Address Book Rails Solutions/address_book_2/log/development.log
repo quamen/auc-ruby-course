@@ -1,0 +1,18 @@
+# Logfile created on Fri Feb 27 15:08:58 +1100 2009
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-27 15:09:14) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 1388ms (View: 973, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-27 15:09:21) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 913ms (View: 889, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-02-27 15:09:23) [GET]
+Rendering template within layouts/people
+Rendering people/index
+Completed in 1085ms (View: 1026, DB: 0) | 200 OK [http://localhost/people]
