@@ -17,11 +17,9 @@ class TableDataSource < OSX::NSObject
   ib_action :refresh
   
   def refresh(sender)
-    @spinner.startAnimation(sender)
-    @spinner.setAlphaValue(1.0) # fade out
-    @table_view.reloadData
-    @spinner.setAlphaValue(0.0) # fade in
-    @spinner.stopAnimation(sender)
+    @spinner.animate(sender) do
+      @table_view.reloadData
+    end
   end
 
   def numberOfRowsInTableView(tableView)
@@ -34,7 +32,8 @@ class TableDataSource < OSX::NSObject
     tweet = @tweets[row]
     
     if tableColumn.identifier == 'user'
-      tweet.user.name
+      #tweet.user.name
+      OSX::NSImage.alloc.initByReferencingURL(OSX::NSURL.URLWithString(tweet.user.profile_image_url))
     elsif tableColumn.identifier == 'text'
       tweet.text
     else
@@ -47,5 +46,17 @@ class TableDataSource < OSX::NSObject
     def fetch_tweets
       Twitter::Base.new('', '').timeline(:public)
     end
+
+end
+
+class OSX::NSProgressIndicator < OSX::NSView
+
+  def animate(sender)
+    self.startAnimation(sender)
+    self.setAlphaValue(1.0)
+    yield if block_given?
+    self.setAlphaValue(0.0)
+    self.stopAnimation(sender)
+  end
 
 end
