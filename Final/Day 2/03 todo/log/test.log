@@ -1,0 +1,1068 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:08:11) [POST]
+  Parameters: {"todo"=>{}}
+  [4;35;1mTodo Create (0.8ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:08:11', NULL, NULL, NULL, NULL, '2009-02-27 00:08:11')[0m
+Redirected to #<Todo:0x22cf84c>
+Completed in 13ms (DB: 2) | 302 Found [http://test.host/todos?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:08:11) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.5ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.5ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:08:11) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:08:11) [GET]
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:08:11) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:08:11) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:08:11) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x2237fb0>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:14:12) [POST]
+  Parameters: {"todo"=>{}}
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://test.host/todos?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:14:12) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mTodo Destroy (0.3ms)[0m   [0mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:14:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 6ms (View: 6, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:14:12) [GET]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:14:12) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:14:12) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/todos/953125641]
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:14:12) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x21f6f9c>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:17:21) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.8ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:17:21', 'My Todo', NULL, NULL, NULL, '2009-02-27 00:17:21')[0m
+Redirected to #<Todo:0x22cde20>
+Completed in 13ms (DB: 2) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:17:21) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.5ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.5ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:17:21) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.5ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 51ms (View: 50, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:17:21) [GET]
+  [4;36;1mTodo Load (0.8ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:17:21) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.6ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:17:21) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.6ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:17:21) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.5ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x223619c>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:28:40', 'something', '2009-02-27 00:28:40')[0m
+  [4;35;1mList Create (0.1ms)[0m   [0mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:28:40', 'something', '2009-02-27 00:28:40')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 11:28:42) [POST]
+  Parameters: {"list"=>{}}
+  [4;35;1mList Create (0.7ms)[0m   [0mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:28:42', NULL, '2009-02-27 00:28:42')[0m
+Redirected to #<List:0x227e884>
+Completed in 12ms (DB: 2) | 302 Found [http://test.host/lists?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.4ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 11:28:42) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.4ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.5ms)[0m   [0;1mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.5ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.4ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  [4;36;1mList Load (0.3ms)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 11:28:42) [PUT]
+  Parameters: {"list"=>{}, "id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Redirected to #<List:0x223bfc0>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/lists/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:28:42) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;36;1mTodo Create (0.3ms)[0m   [0;1mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:28:42', 'My Todo', NULL, NULL, NULL, '2009-02-27 00:28:42')[0m
+Redirected to #<Todo:0x2233820>
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:28:42) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mTodo Destroy (0.2ms)[0m   [0mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 25ms (View: 25, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  [4;35;1mTodo Load (0.4ms)[0m   [0mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:28:42) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.4ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:28:42) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x219ee78>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Exists (0.3ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.6ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:43:25', 'something', '2009-02-27 00:43:25')[0m
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 11:43:27) [POST]
+  Parameters: {"list"=>{}}
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 8ms (View: 3, DB: 2) | 200 OK [http://test.host/lists?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 11:43:27) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Destroy (0.2ms)[0m   [0;1mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/lists/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 11:43:27) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 11:43:27) [GET]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 11:43:27) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 11:43:27) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 11:43:27) [PUT]
+  Parameters: {"list"=>{}, "id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'MyString' AND "lists".id <> 953125641) LIMIT 1[0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/lists/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:43:27) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.3ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:43:27', 'My Todo', NULL, NULL, NULL, '2009-02-27 00:43:27')[0m
+Redirected to #<Todo:0x21f3ef0>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:43:27) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.2ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:43:27) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:43:28) [GET]
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:43:28) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 59ms (View: 59, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:43:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:43:28) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x2550800>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.2ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:44:15', 'something', '2009-02-27 00:44:15')[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 11:44:17) [POST]
+  Parameters: {"list"=>{"title"=>"My list!"}}
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'My list!') LIMIT 1[0m
+  [4;36;1mList Create (0.6ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:44:17', 'My list!', '2009-02-27 00:44:17')[0m
+Redirected to #<List:0x227d808>
+Completed in 13ms (DB: 2) | 302 Found [http://test.host/lists?list%5Btitle%5D=My+list%21]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.4ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 11:44:17) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.4ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.5ms)[0m   [0mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.5ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.4ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  [4;35;1mList Load (0.7ms)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.3ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 11:44:17) [PUT]
+  Parameters: {"list"=>{}, "id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Exists (0.2ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'MyString' AND "lists".id <> 953125641) LIMIT 1[0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/lists/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:44:17) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;36;1mTodo Create (0.3ms)[0m   [0;1mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:44:17', 'My Todo', NULL, NULL, NULL, '2009-02-27 00:44:17')[0m
+Redirected to #<Todo:0x21fda2c>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:44:17) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mTodo Destroy (0.2ms)[0m   [0mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 59ms (View: 59, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:44:17) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:44:17) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x25603cc>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Exists (0.3ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.6ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:46:02', 'something', '2009-02-27 00:46:02')[0m
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 11:46:04) [POST]
+  Parameters: {"list"=>{"title"=>"My list!"}}
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'My list!') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 00:46:04', 'My list!', '2009-02-27 00:46:04')[0m
+Redirected to #<List:0x227d7cc>
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/lists?list%5Btitle%5D=My+list%21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 11:46:04) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.2ms)[0m   [0mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  [4;35;1mList Load (0.3ms)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 11:46:04) [PUT]
+  Parameters: {"list"=>{"title"=>"super list"}, "id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'super list' AND "lists".id <> 953125641) LIMIT 1[0m
+  [4;35;1mList Update (0.3ms)[0m   [0mUPDATE "lists" SET "title" = 'super list', "updated_at" = '2009-02-27 00:46:04' WHERE "id" = 953125641[0m
+Redirected to #<List:0x2239680>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=super+list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 11:46:04) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.3ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "note", "complete", "created_at") VALUES('2009-02-27 00:46:04', 'My Todo', NULL, NULL, NULL, '2009-02-27 00:46:04')[0m
+Redirected to #<Todo:0x222f428>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 11:46:04) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.2ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 11:46:04) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 11:46:04) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x219aa80>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Load (0.3ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 996332877) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:04:28', 'something', '2009-02-27 01:04:28')[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 12:04:30) [POST]
+  Parameters: {"list"=>{"title"=>"My list!"}}
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'My list!') LIMIT 1[0m
+  [4;36;1mList Create (0.6ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:04:30', 'My list!', '2009-02-27 01:04:30')[0m
+Redirected to #<List:0x227cf5c>
+Completed in 13ms (DB: 2) | 302 Found [http://test.host/lists?list%5Btitle%5D=My+list%21]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 12:04:30) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.2ms)[0m   [0mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  [4;35;1mList Load (0.3ms)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 12:04:30) [PUT]
+  Parameters: {"list"=>{"title"=>"super list"}, "id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'super list' AND "lists".id <> 953125641) LIMIT 1[0m
+  [4;35;1mList Update (0.3ms)[0m   [0mUPDATE "lists" SET "title" = 'super list', "updated_at" = '2009-02-27 01:04:30' WHERE "id" = 953125641[0m
+Redirected to #<List:0x2238e10>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=super+list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 12:04:30) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.3ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "list_id", "note", "complete", "created_at") VALUES('2009-02-27 01:04:30', 'My Todo', NULL, NULL, NULL, NULL, '2009-02-27 01:04:30')[0m
+Redirected to #<Todo:0x222ebb8>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 12:04:30) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.2ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 22, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 12:04:30) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 12:04:30) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x219934c>
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.1ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 996332877) [0m
+  [4;35;1mTodo Load (0.1ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 996332877) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:08:36', 'something', '2009-02-27 01:08:36')[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 12:08:38) [POST]
+  Parameters: {"list"=>{"title"=>"My list!"}}
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'My list!') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:08:38', 'My list!', '2009-02-27 01:08:38')[0m
+Redirected to #<List:0x22637f0>
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/lists?list%5Btitle%5D=My+list%21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 12:08:38) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.2ms)[0m   [0mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  [4;35;1mList Load (0.3ms)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 12:08:38) [PUT]
+  Parameters: {"list"=>{"title"=>"super list"}, "id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'super list' AND "lists".id <> 953125641) LIMIT 1[0m
+  [4;35;1mList Update (0.3ms)[0m   [0mUPDATE "lists" SET "title" = 'super list', "updated_at" = '2009-02-27 01:08:38' WHERE "id" = 953125641[0m
+Redirected to #<List:0x221eee8>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=super+list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 12:08:38) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.3ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "list_id", "note", "complete", "created_at") VALUES('2009-02-27 01:08:38', 'My Todo', NULL, NULL, NULL, NULL, '2009-02-27 01:08:38')[0m
+Redirected to #<Todo:0x2214768>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 12:08:38) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.3ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 12:08:38) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (53.9ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 12:08:38) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x257a27c>
+Completed in 2ms (DB: 54) | 302 Found [http://test.host/todos/953125641?]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 953125641) [0m
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 996332877) [0m
+  [4;35;1mTodo Load (0.1ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos".list_id = 996332877) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:09:59', 'something', '2009-02-27 01:09:59')[0m
+  [4;35;1mList Exists (0.1ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'something') LIMIT 1[0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.1ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;35;1mList Load (0.1ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 996332877) [0m
+  [4;35;1mList Load (0.1ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+
+
+Processing ListsController#create (for 0.0.0.0 at 2009-02-27 12:10:01) [POST]
+  Parameters: {"list"=>{"title"=>"My list!"}}
+  [4;35;1mList Exists (0.3ms)[0m   [0mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'My list!') LIMIT 1[0m
+  [4;36;1mList Create (0.3ms)[0m   [0;1mINSERT INTO "lists" ("updated_at", "title", "created_at") VALUES('2009-02-27 01:10:01', 'My list!', '2009-02-27 01:10:01')[0m
+Redirected to #<List:0x2262fbc>
+Completed in 12ms (DB: 2) | 302 Found [http://test.host/lists?list%5Btitle%5D=My+list%21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#destroy (for 0.0.0.0 at 2009-02-27 12:10:01) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;35;1mList Destroy (0.2ms)[0m   [0mDELETE FROM "lists" WHERE "id" = 953125641[0m
+Redirected to http://test.host/lists
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/lists/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "lists" [0m
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#edit (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/lists/953125641/edit]
+
+
+Processing ListsController#index (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" [0m
+Rendering template within layouts/lists
+Rendering lists/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/lists]
+
+
+Processing ListsController#new (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+Rendering template within layouts/lists
+Rendering lists/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/new]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#show (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+Rendering template within layouts/lists
+Rendering lists/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/lists/953125641]
+  [4;36;1mList Load (0.2ms)[0m   [0;1mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+
+
+Processing ListsController#update (for 0.0.0.0 at 2009-02-27 12:10:01) [PUT]
+  Parameters: {"list"=>{"title"=>"super list"}, "id"=>"953125641"}
+  [4;35;1mList Load (0.2ms)[0m   [0mSELECT * FROM "lists" WHERE ("lists"."id" = 953125641) [0m
+  [4;36;1mList Exists (0.1ms)[0m   [0;1mSELECT "lists".id FROM "lists" WHERE ("lists"."title" = 'super list' AND "lists".id <> 953125641) LIMIT 1[0m
+  [4;35;1mList Update (0.3ms)[0m   [0mUPDATE "lists" SET "title" = 'super list', "updated_at" = '2009-02-27 01:10:01' WHERE "id" = 953125641[0m
+Redirected to #<List:0x221e6b4>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/lists/953125641?list%5Btitle%5D=super+list]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+
+
+Processing TodosController#create (for 0.0.0.0 at 2009-02-27 12:10:01) [POST]
+  Parameters: {"todo"=>{"title"=>"My Todo"}}
+  [4;35;1mTodo Create (0.3ms)[0m   [0mINSERT INTO "todos" ("updated_at", "title", "due_by", "list_id", "note", "complete", "created_at") VALUES('2009-02-27 01:10:01', 'My Todo', NULL, NULL, NULL, NULL, '2009-02-27 01:10:01')[0m
+Redirected to #<Todo:0x2213f34>
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/todos?todo%5Btitle%5D=My+Todo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#destroy (for 0.0.0.0 at 2009-02-27 12:10:01) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+  [4;36;1mTodo Destroy (0.2ms)[0m   [0;1mDELETE FROM "todos" WHERE "id" = 953125641[0m
+Redirected to http://test.host/todos
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/todos/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "todos" [0m
+  [4;36;1mTodo Load (0.3ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#edit (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTodo Load (0.2ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/edit
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://test.host/todos/953125641/edit]
+
+
+Processing TodosController#index (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  [4;36;1mTodo Load (0.4ms)[0m   [0;1mSELECT * FROM "todos" [0m
+Rendering template within layouts/todos
+Rendering todos/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/todos]
+
+
+Processing TodosController#new (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+Rendering template within layouts/todos
+Rendering todos/new
+Completed in 6ms (View: 6, DB: 0) | 200 OK [http://test.host/todos/new]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#show (for 0.0.0.0 at 2009-02-27 12:10:01) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Rendering template within layouts/todos
+Rendering todos/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/todos/953125641]
+  [4;35;1mTodo Load (0.3ms)[0m   [0mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+
+
+Processing TodosController#update (for 0.0.0.0 at 2009-02-27 12:10:01) [PUT]
+  Parameters: {"id"=>"953125641", "todo"=>{}}
+  [4;36;1mTodo Load (0.2ms)[0m   [0;1mSELECT * FROM "todos" WHERE ("todos"."id" = 953125641) [0m
+Redirected to #<Todo:0x2577d88>
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/todos/953125641?]

@@ -1,0 +1,34 @@
+<h1>Listing people</h1>
+
+<table>
+  <tr>
+    <th>Organization</th>
+    <th>Last</th>
+    <th>Email</th>
+    <th>Middle</th>
+    <th>Home page</th>
+    <th>First</th>
+    <th>Birthday</th>
+    <th>Title</th>
+  </tr>
+
+<% for person in @people %>
+  <tr>
+    <td><%=h person.organization %></td>
+    <td><%=h person.last %></td>
+    <td><%=h person.email %></td>
+    <td><%=h person.middle %></td>
+    <td><%=h person.home_page %></td>
+    <td><%=h person.first %></td>
+    <td><%=h person.birthday %></td>
+    <td><%=h person.title %></td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New person', new_person_path %>
