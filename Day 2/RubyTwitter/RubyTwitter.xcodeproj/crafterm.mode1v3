@@ -327,10 +327,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BF3A5B170F67D54600CDACB9</string>
+										<string>BF3A5B1D0F67D5CE00CDACB9</string>
 										<key>history</key>
 										<array>
-											<string>BF80430E0F4E346800EDA1B9</string>
+											<string>BF3A5B170F67D54600CDACB9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -388,9 +388,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BF3A5AD90F67D49300CDACB9</string>
+				<string>BF3A5B1E0F67D5CE00CDACB9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BF3A5ADA0F67D49300CDACB9</string>
+				<string>BF3A5B1F0F67D5CE00CDACB9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -524,9 +524,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>BF5BBD670F4AB9850098F0A6</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/RubyTwitter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
