@@ -1,3 +1,0 @@
-- Ruby the language
-- RubyCocoa
-- Twitter 2.0 - RubyCocoa twitter client
