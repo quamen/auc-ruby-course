@@ -27,7 +27,7 @@ The quickest (and dirtiest) way to get a rails app doing something useful is to 
 
 The console output will let you know which files it has created. There will be a migration file, a model file, tests, a restful controller, views, a helper file, css and javascript files. 
 
-Have a look at each generated file to get an understanding of what it does. Scaffolding generates a lot of files that may never use, hence their dwindling use as you understnd rails.
+Have a look at each generated file to get an understanding of what it does. Scaffolding generates a lot of template files, hence their dwindling use as you understand rails.
 
 ## Migrations
 
@@ -81,7 +81,7 @@ Try it out in the browser.
 
 ## More Testing
 
-One big todo list isn't very appealing. Most people want to create some kind of bucket to separate out tasks. Lets gets a list to hold our todos.
+One big todo list isn't very appealing. Most people want to create some kind of bucket to separate out tasks. Let's build a list to hold our todos.
 
 	$ rails generate scaffold list title:string
 
@@ -122,7 +122,7 @@ Using the documentation on github, re-write your model tests to use shoulda.
 
 Now lets link our todo and list models with an association. 
 
-We're going to create a many to one relationship. One list has many todo items. In order to record the list that a todo item belongs to we need to add a column to the todo table to store the id of the list.
+We're going to create a many to one relationship. One list has many todo items. In order to associate a todo item with a list, we need to add a column to the todo table that stores the id of the list.
 
 	$ rails generate migration add_list_id_to_todos
 
