@@ -1,14 +1,19 @@
 # 01 Getting Started
 # 
-# Step 1:
+# Step 1: Install the latest version of rails.
 # 
-   $ rails todo
+
+  $ gem install rails --pre
+
+# 
+
+  $ rails todo
 #   
 #   Check out all the code I didn't just write!
 # 
 #   Oh and it already runs
 # 
-   $ script/server
+   $ rails server
 #   
 # Step 2:
 # 

@@ -89,11 +89,126 @@ We should probably validate that our lists have a title and that it is unique. A
 
 	validates_uniqueness_of :title
 
-You should definitely add a database level contraint for that in a production system, but we'll skip that for now.
+You should definitely add a database level constraint for that in a production system, but we'll skip that for now.
 
 It's up to you to write failing tests for the list model.
+
+You'll no doubt run into some issues here. Call out if you can't figure out what's going on.
+
+## Re-inventing the Wheel is a Bad Idea
+
+Writing tests is sometimes tedious. Thankfuly many people have written them before you.
+
+	https://github.com/thoughtbot/shoulda
+
+Shoulda is designed to help make testing rails code easier. It includes a lot of helpful methods, that allow you to concentrate on getting things done, instead of figuring out how to test them.
+
+Add shoulda to the :test section of your Gemfile.
+
+	group :test do
+  		# Pretty printed test output
+  		gem 'turn', :require => false
+  		gem 'shoulda'
+		gem 'shoulda-matchers'
+	end 
+
+Then use bundler to update your stack.
+
+	bundle
+
+Using the documentation on github, re-write your model tests to use shoulda.
 
 ## Associations
 
 Now lets link our todo and list models with an association. 
+
+We're going to create a many to one relationship. One list has many todo items. In order to record the list that a todo item belongs to we need to add a column to the todo table to store the id of the list.
+
+	$ rails generate migration add_list_id_to_todos
+
+The magic ends here, now we have to do some work ourselves. 
+
+In the migration file add the following:
+
+	class AddListIdToTodos < ActiveRecord::Migration
+  		def change
+    		add_column :todos, :list_id, :integer
+  		end
+	end
+
+In a production system, you would add a database index on the list_id column as well. 
+
+Run the migrations again to add the column.
+
+	$ rake db:migrate
+
+Our database now knows about the relationship between a list and a todo, however our models do not.
+
+Write failing tests and then make them pass.
+
+Todo items should definitely belong to a list. Write a test for that, and make it pass.
+
+This will expose a problem in the functional tests. We can no longer create and update todos, as the fixtures that power them have no lists.
+
+We can fix this easily by updating the fixture file todos.yml:
+
+	one:
+  		list: one
+  		title: MyString
+  		note: MyText
+  		due_by: 2011-07-03 15:31:47
+  		complete: false
+
+	two:
+  		list: one
+  		title: MyString
+  		note: MyText
+  		due_by: 2011-07-03 15:31:47
+  		complete: false
+
+Now our functional tests pass, but our user interface is somewhat broken. Unforetunately, rails doesn't generate any integration tests for us, otherwise these would now be failing.
+
+It's up to you to figure out the best way to write integration tests yourself. There are plenty of tools out there, Cucumber, Steak and many more.
+
+We're going to jump straight ahead and fix the user interface.
+
+## Routing
+
+The routes file is where we configure the URL structure that our application. The generators have filled in some routes for us, but that was before we created our associations.
+
+Right now we have unrelated two URI's.
+
+	/todos
+	/lists
+
+But what we really want is a nested URI.
+
+	/lists/:list_id/todos
+
+Open config/routes.rb and read the comments. Try and created a nested route structure. You can inspect your routes by running the routes rake task:
+
+	$ rake routes
+
+When you're done, run your tests. Guess what? They're broken again. Our todos route is now a list_todos route.
+
+Our todos controller expects to know about a list, so that it can scope access to the list and only show the todos that belong to it.
+
+Add a method to the todos_controller to find the correct list.
+  
+  	def find_list
+   	@list = List.find(params[:list_id])
+  	end
+
+Because we want this method to run before every action, as we can't do anything without a list, we should add it to a before_filter:
+
+	before_filter :find_list
+
+Now that we have a list, we can update the routes in the controller to point to use the new nested route. We can also scope every access to a todo through the @list object:
+
+	@list.todos
+
+I think you're armed with enough information to get started fixing the application.
+
+Remember, you can run your tests and your application in your browser.
+
 
