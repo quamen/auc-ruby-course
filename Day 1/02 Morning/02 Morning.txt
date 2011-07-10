@@ -1,2 +1,0 @@
-- Ruby environment
-- Ruby the language and platform
