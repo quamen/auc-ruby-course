@@ -1,0 +1,182 @@
+TRubyTwitter
+v7
+r0
+t278685591.545787
+cCheck dependencies
+cProcessInfoPlistFile "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Info.plist" Info.plist
+cStripNIB "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib"
+cCopyStringsFile "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCpResource build/Debug/RubyTwitter.app/Contents/Resources/rb_main.rb rb_main.rb
+cCpResource build/Debug/RubyTwitter.app/Contents/Resources/TableDataSource.rb TableDataSource.rb
+cCompileC build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/main.o "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter" normal i386
+cTouch "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004AEB6DF200000000000000EE
+t1256943090
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/RubyCocoa.framework/Headers/RBRuntime.h
+c0000000047BB26B300000000000005C0
+t1203447475
+s1472
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004AEB6E0200000000000000EE
+t1256943106
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/RubyCocoa.framework/Headers/RBRuntime.h
+c000000004A11F42400000000000005C0
+t1242690596
+s1472
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/RubyCocoa.framework/RubyCocoa
+c000000004A11F42400000000000850F0
+t1242690596
+s545008
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/InfoPlist.strings
+c00000000499A885800000000000001AC
+t1234864216
+s428
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib
+c00000000499DF6320000000000000088
+t1235088946
+s136
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/TableDataSource.rb
+c00000000499DF51F000000000000050E
+t1235088671
+s1294
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app
+t1256992791
+s102
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Info.plist
+t1234864216
+s794
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter
+t1256992791
+s13136
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/PkgInfo
+t1234864217
+s8
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1234864217
+s428
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/English.lproj/MainMenu.nib
+t1256992759
+s23796
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/TableDataSource.rb
+t1236770059
+s1294
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/rb_main.rb
+t1234864310
+s487
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/RubyTwitter.LinkFileList
+c00000000499A88B600000000000000AF
+t1234864310
+s175
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/main.o
+t1256992790
+s5044
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m
+c00000000499A885A0000000000000125
+t1234864218
+s293
+i<Cocoa/Cocoa.h>
+i<RubyCocoa/RBRuntime.h>
+
+N/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/rb_main.rb
+c00000000499A885A00000000000001E7
+t1234864218
+s487
+
+NInfo.plist
+c00000000499A88580000000000000353
+t1234864216
+s851
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies278685588#278685588#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/main.o "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s278685588.681792
+e278685590.814698
+r1
+xCompileC
+xbuild/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/main.o
+x/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m278685588#278685590#0(0"0(0#0#106"/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m4300885448#1439"    cd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/RubyTwitter.hmap" "-F/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug" "-I/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/include" "-I/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/DerivedSources/i386" "-I/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/DerivedSources" -c "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/main.m" -o "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/main.o"0#
+
+CCopyStringsFile "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+r0
+
+CCpResource build/Debug/RubyTwitter.app/Contents/Resources/TableDataSource.rb TableDataSource.rb
+r0
+
+CCpResource build/Debug/RubyTwitter.app/Contents/Resources/rb_main.rb rb_main.rb
+r0
+
+CLd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter" normal i386
+s278685590.814876
+e278685591.543491
+r1
+xLd
+x/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter
+xnormal
+xi386
+lSLF07#2@159"Link /Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter278685590#278685591#0(0"0(0#0#0"4300885448#894"    cd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug" "-F/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug" -filelist "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/RubyTwitter.build/Debug/RubyTwitter.build/Objects-normal/i386/RubyTwitter.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework RubyCocoa -o "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/MacOS/RubyTwitter"0#
+
+CProcessInfoPlistFile "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Info.plist" Info.plist
+r0
+
+CStripNIB "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib"
+s278685559.369006
+e278685559.485539
+r1
+xStripNIB
+x/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib
+lSLF07#2@35"StripNIB English.lproj/MainMenu.nib278685559#278685559#0(0"0(0#0#126"/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib4300885448#488"    cd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter"    /Developer/usr/bin/ibtool --strip "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app/Contents/Resources/English.lproj/MainMenu.nib" --output-format human-readable-text "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/English.lproj/MainMenu.nib"0#
+
+CTouch "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app"
+s278685591.543585
+e278685591.545762
+r1
+xTouch
+x/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app
+lSLF07#2@133"Touch /Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app278685591#278685591#0(0"0(0#0#0"4300885448#261"    cd "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter"    /usr/bin/touch -c "/Users/crafterm/Desktop/Presentations/Apple University Consortium/auc-ruby-course/Day 2/RubyTwitter/build/Debug/RubyTwitter.app"0#
+
