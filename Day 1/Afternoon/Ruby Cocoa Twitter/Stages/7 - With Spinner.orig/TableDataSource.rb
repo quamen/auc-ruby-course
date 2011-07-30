@@ -11,15 +11,14 @@ require 'twitter'
 require 'osx/cocoa'
 
 class TableDataSource < OSX::NSObject
-  attr_accessor :tweets
   
   ib_outlet :table_view, :spinner
   ib_action :refresh
   
   def refresh(sender)
-    @spinner.animate(sender) do
-      @table_view.reloadData
-    end
+    @spinner.startAnimation(sender)
+    @table_view.reloadData
+    @spinner.stopAnimation(sender)
   end
 
   def numberOfRowsInTableView(tableView)
@@ -46,17 +45,5 @@ class TableDataSource < OSX::NSObject
     def fetch_tweets
       Twitter::Client.new.public_timeline
     end
-
-end
-
-class OSX::NSProgressIndicator < OSX::NSView
-
-  def animate(sender)
-    self.startAnimation(sender)
-    self.setAlphaValue(1.0)
-    yield if block_given?
-    self.setAlphaValue(0.0)
-    self.stopAnimation(sender)
-  end
 
 end
