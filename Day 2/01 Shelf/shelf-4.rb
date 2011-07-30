@@ -9,14 +9,15 @@
 
 
 require 'rubygems'
-require 'activesupport' # for cattr_accessor
+require 'active_support/all' # for cattr_accessor
 require 'dsl_accessor'
+require 'pp'
 
 class Object
   def shelf(&block)
     Shelf.current = Shelf.new(&block)
   end
-  
+
   def item(name, *properties)
     klass = Object.const_set(name.to_s.capitalize, Class.new(Item))
     klass.dsl_accessor *properties
@@ -26,16 +27,16 @@ end
 class Shelf
   attr_accessor  :items
   cattr_accessor :current
-  
+
   def initialize(&block)
     @items = []
     instance_eval &block
   end
-  
+
   def method_missing(klass, *args, &block)
     @items << klass.to_s.capitalize.constantize.new(*args, &block)
   end
-    
+
 end
 
 class Item
@@ -58,4 +59,4 @@ item :cd, :name, :author, :description, :year
 
 require 'myshelf'
 
-puts Shelf.current.inspect
+pp Shelf.current

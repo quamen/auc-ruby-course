@@ -6,21 +6,22 @@
 # - Open up Object, add a method for defining a shelf in global namespace, for the moment, lets store the result in a class variable
 # - Require/parse our data
 # - Inspect the shelf
-# 
+#
 
 
 require 'rubygems'
-require 'activesupport' # for cattr_accessor
+require 'active_support/all' # for cattr_accessor
+require 'pp'
 
 class Shelf
   attr_accessor  :items
   cattr_accessor :current
-  
+
   def initialize(&block)
     @items = []
     instance_eval &block
   end
-  
+
   def dvd(options = {}); end
   def book(options = {}); end
 end
@@ -33,4 +34,4 @@ end
 
 require 'myshelf'
 
-puts Shelf.current.inspect
+puts Shelf.current
