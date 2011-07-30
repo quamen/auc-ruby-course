@@ -7,7 +7,7 @@ require 'rubygems'
 require 'twitter'
 require 'osx/cocoa'
 
-class TableDataSource < OSX::NSObject
+class TwitterDataSource < OSX::NSObject
 
   def numberOfRowsInTableView(tableView)
   end
